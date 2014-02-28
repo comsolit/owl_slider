@@ -53,7 +53,7 @@ overwriteSettings:
       Language:
         #locallang.xml: merge
         #locallang.xlf: merge
-      #Templates: keep
+      Templates: keep
 
   ext_icon.gif: keep
 

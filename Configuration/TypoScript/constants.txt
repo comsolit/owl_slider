@@ -15,7 +15,7 @@ plugin.tx_owlslider {
 	}
 	persistence {
 		# cat=plugin.tx_owlslider//a; type=string; label=Default storage PID
-		storagePid = 26
+		storagePid = 
 	}
 	
 	configuration {
