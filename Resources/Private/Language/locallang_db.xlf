@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<xliff version="1.0">
+	<file source-language="en" datatype="plaintext" original="messages" date="2014-02-26T10:15:39Z" product-name="owl_slider">
+		<header/>
+		<body>
+
+			<trans-unit id="tx_owlslider_domain_model_item">
+				<source>Item</source>
+			</trans-unit>
+			<trans-unit id="tx_owlslider_domain_model_item.itemname">
+				<source>Itemname</source>
+			</trans-unit>
+			<trans-unit id="tx_owlslider_domain_model_item.itemimage">
+				<source>Itemimage</source>
+			</trans-unit>
+
+		</body>
+	</file>
+</xliff>

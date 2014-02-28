@@ -1,0 +1,90 @@
+plugin.tx_owlslider {
+	view {
+		templateRootPath = {$plugin.tx_owlslider.view.templateRootPath}
+		partialRootPath = {$plugin.tx_owlslider.view.partialRootPath}
+		layoutRootPath = {$plugin.tx_owlslider.view.layoutRootPath}
+	}
+	persistence {
+		storagePid = {$plugin.tx_owlslider.persistence.storagePid}
+	}
+	features {
+		# uncomment the following line to enable the new Property Mapper.
+		# rewrittenPropertyMapper = 1
+	}
+}
+
+plugin.tx_owlslider._CSS_DEFAULT_STYLE (
+	textarea.f3-form-error {
+		background-color:#FF9F9F;
+		border: 1px #FF0000 solid;
+	}
+
+	input.f3-form-error {
+		background-color:#FF9F9F;
+		border: 1px #FF0000 solid;
+	}
+
+	.tx-owl-slider table {
+		border-collapse:separate;
+		border-spacing:10px;
+	}
+
+	.tx-owl-slider table th {
+		font-weight:bold;
+	}
+
+	.tx-owl-slider table td {
+		vertical-align:top;
+	}
+)
+
+
+###############################################################################
+
+# Include stylesheets
+page.includeCSS {
+    owlslider = EXT:owl_slider/Resources/Public/owl-carousel/owl.carousel.css
+}
+
+###############################################################################
+
+# Include javascript files
+
+# Include Jquery
+
+
+# Include owlSlider
+page.includeJSFooter {
+
+	owlslider = EXT:owl_slider/Resources/Public/owl-carousel/owl.carousel.js
+}
+
+page.jsFooterInline {
+	9999 = TEXT
+  	9999.value (
+		$(document).ready(function() {
+			var slider = $('#owlslider');
+
+			slider.owlCarousel({
+				autoPlay : {$plugin.tx_owlslider.configuration.autoplay},
+				lazyLoad : {$plugin.tx_owlslider.configuration.lazyload},
+				itemsCustom : {$plugin.tx_owlslider.configuration.itemscustom},
+				responsiveRefreshRate : {$plugin.tx_owlslider.configuration.responsiverefleshrate},
+				slideSpeed : {$plugin.tx_owlslider.configuration.slidespeed},
+				paginationSpeed : {$plugin.tx_owlslider.configuration.paginationspeed},
+				stopOnHover : {$plugin.tx_owlslider.configuration.stoponhover},
+				rewindNav : {$plugin.tx_owlslider.configuration.rewindnav},
+				rewindSpeed : {$plugin.tx_owlslider.configuration.rewindspeed},
+				pagination : {$plugin.tx_owlslider.configuration.pagination},
+			});
+
+			// Custom Navigation Events
+			$(".next").click(function() {
+				slider.trigger('owl.next');
+			})
+			$(".prev").click(function() {
+				slider.trigger('owl.prev');
+			})
+		});
+	)
+}		

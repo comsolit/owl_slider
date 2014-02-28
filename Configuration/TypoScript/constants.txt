@@ -1,0 +1,43 @@
+# cat=plugin.tx_owlslider/general/010; type=boolean; label= Include JQuery?: You can enable or disable JQuery in your project
+plugin.tx_owlslider.includeJquery = 1
+
+# cat=plugin.tx_owlslider/general/010; type=string; label= JQuery Source: Change jQuery Source - per default it will be loaded from jquery.com
+plugin.tx_owlslider.jquery = http://code.jquery.com/jquery-1.11.0.min.js
+
+plugin.tx_owlslider {
+	view {
+		# cat=plugin.tx_owlslider/file; type=string; label=Path to template root (FE)
+		templateRootPath = EXT:owl_slider/Resources/Private/Templates/
+		# cat=plugin.tx_owlslider/file; type=string; label=Path to template partials (FE)
+		partialRootPath = EXT:owl_slider/Resources/Private/Partials/
+		# cat=plugin.tx_owlslider/file; type=string; label=Path to template layouts (FE)
+		layoutRootPath = EXT:owl_slider/Resources/Private/Layouts/
+	}
+	persistence {
+		# cat=plugin.tx_owlslider//a; type=string; label=Default storage PID
+		storagePid = 26
+	}
+	
+	configuration {
+		# cat=plugin.tx_owlslider//a; type=int+; label=Autoplay: 5000 to play every 5 seconds
+		autoplay = 3000
+		# cat=plugin.tx_owlslider//a; type=boolean; label=lazyLoad: false by default
+		lazyload = true
+		# cat=plugin.tx_owlslider//a; type=string; label=itemCustom: [[breakpoint in px], [amount of visible slides]]
+		itemscustom = [[0, 1], [280, 2], [350, 3], [480, 4], [768, 6], [992, 7]]
+		# cat=plugin.tx_owlslider//a; type=int+; label=responsiveRefreshrate
+		responsiverefleshrate = 50
+		# cat=plugin.tx_owlslider//a; type=int+; label=slideSpeed
+		slidespeed = 200
+		# cat=plugin.tx_owlslider//a; type=int+; label=paginationSpeed
+		paginationspeed = 500
+		# cat=plugin.tx_owlslider//a; type=boolean; label=stopOnHover
+		stoponhover = true
+		# cat=plugin.tx_owlslider//a; type=boolean; label=rewindNav
+		rewindnav = true
+		# cat=plugin.tx_owlslider//a; type=int+; label=rewindSpeed
+		rewindspeed = 600
+		# cat=plugin.tx_owlslider//a; type=boolean; label=pagination
+		pagination = false
+	}	
+}
