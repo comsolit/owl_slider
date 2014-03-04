@@ -4,8 +4,11 @@
 	<f:if condition="{items}">
 		<div id="owlslider">
 			<f:for each="{items}" as="item">
-				<div class="item"><f:image class="lazyOwl" src="uploads/tx_owlslider/{item.itemimage}" height="120" alt="{item.itemname}" /></div>
+				<div class="item">
+					<f:image class="lazyOwl" src="uploads/tx_owlslider/{item.itemimage}" height="120" alt="{item.itemname}" />
+				</div>
 			</f:for>
 		</div>
+		<f:render partial="SliderNavigation" />
 	</f:if>
 </f:section>

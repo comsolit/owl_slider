@@ -24,7 +24,7 @@ plugin.tx_owlslider {
 		# cat=plugin.tx_owlslider//a; type=boolean; label=lazyLoad: false by default
 		lazyload = true
 		# cat=plugin.tx_owlslider//a; type=string; label=itemCustom: [[breakpoint in px], [amount of visible slides]]
-		itemscustom = [[0, 1], [280, 2], [350, 3], [480, 4], [768, 6], [992, 7]]
+		itemscustom = [[0, 1], [300, 2], [450, 3], [570, 4], [768, 5], [992, 6], [1200, 7]]
 		# cat=plugin.tx_owlslider//a; type=int+; label=responsiveRefreshrate
 		responsiverefleshrate = 50
 		# cat=plugin.tx_owlslider//a; type=int+; label=slideSpeed
