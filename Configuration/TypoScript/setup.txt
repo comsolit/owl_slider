@@ -25,12 +25,12 @@ page.includeCSS {
 ###############################################################################
 
 # Include javascript files
-
-# Include Jquery
-
-
-# Include owlSlider
 page.includeJSFooter {
+
+	jQueryMin = {$plugin.tx_owlslider.jquery}
+  	jQueryMin.external = 1
+  	jQueryMin.forceOnTop = 1
+  	jQueryMin.if.isTrue = {$plugin.tx_owlslider.includeJquery}
 	owlslider = EXT:owl_slider/Resources/Public/owl-carousel/owl.carousel.js
 }
 
