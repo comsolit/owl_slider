@@ -11,7 +11,7 @@
  ***************************************************************/
 
 $EM_CONF[$_EXTKEY] = array(
-	'title' => 'Slider',
+	'title' => 'owlSlider',
 	'description' => '',
 	'category' => 'misc',
 	'author' => 'Andres',

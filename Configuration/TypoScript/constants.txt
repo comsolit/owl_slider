@@ -19,25 +19,25 @@ plugin.tx_owlslider {
 	}
 	
 	configuration {
-		# cat=plugin.tx_owlslider//a; type=int+; label=Autoplay: 5000 to play every 5 seconds
+		# cat=plugin.tx_owlslider//a; type=int+; label=autoPlay: Change to any integrer for example autoPlay : 5000 to play every 5 seconds.
 		autoplay = 3000
-		# cat=plugin.tx_owlslider//a; type=boolean; label=lazyLoad: false by default
+		# cat=plugin.tx_owlslider//a; type=options[true,false]; label=lazyLoad: Delays loading of images. Images outside of viewport won't be loaded before user scrolls to them. Great for mobile devices to speed up page loadings.
 		lazyload = true
-		# cat=plugin.tx_owlslider//a; type=string; label=itemCustom: [[breakpoint in px], [amount of visible slides]]
+		# cat=plugin.tx_owlslider//a; type=string; label=itemCustom:  This allows you to add custom variations of items depending from the width If this option is set, itemsDeskop, itemsDesktopSmall, itemsTablet, itemsMobile etc. are disabled For better preview, order the arrays by screen size, but it's not mandatory Don't forget to include the lowest available screen size, otherwise it will take the default one for screens lower than lowest available. Example: [[0, 2], [400, 4], [700, 6], [1000, 8], [1200, 10], [1600, 16]]
 		itemscustom = [[0, 1], [300, 2], [450, 3], [570, 4], [768, 5], [992, 6], [1200, 7]]
-		# cat=plugin.tx_owlslider//a; type=int+; label=responsiveRefreshrate
+		# cat=plugin.tx_owlslider//a; type=int+; label=responsiveRefreshrate: 200 to check window width changes every 200ms for responsive actions.
 		responsiverefleshrate = 50
-		# cat=plugin.tx_owlslider//a; type=int+; label=slideSpeed
+		# cat=plugin.tx_owlslider//a; type=int+; label=slideSpeed: Slide speed in milliseconds.
 		slidespeed = 200
-		# cat=plugin.tx_owlslider//a; type=int+; label=paginationSpeed
+		# cat=plugin.tx_owlslider//a; type=int+; label=paginationSpeed: Pagination speed in milliseconds.
 		paginationspeed = 500
-		# cat=plugin.tx_owlslider//a; type=boolean; label=stopOnHover
+		# cat=plugin.tx_owlslider//a; type=options[true,false]; label=stopOnHover: Stop autoplay on mouse hover.
 		stoponhover = true
-		# cat=plugin.tx_owlslider//a; type=boolean; label=rewindNav
+		# cat=plugin.tx_owlslider//a; type=options[true,false]; label=rewindNav: Slide to first item. Use rewindSpeed to change animation speed. 
 		rewindnav = true
-		# cat=plugin.tx_owlslider//a; type=int+; label=rewindSpeed
+		# cat=plugin.tx_owlslider//a; type=int+; label=rewindSpeed: Rewind speed in milliseconds.
 		rewindspeed = 600
-		# cat=plugin.tx_owlslider//a; type=boolean; label=pagination
+		# cat=plugin.tx_owlslider//a; type=options[true,false]; label=pagination: Show pagination.
 		pagination = false
 	}	
 }
