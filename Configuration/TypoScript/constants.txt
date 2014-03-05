@@ -2,7 +2,7 @@
 plugin.tx_owlslider.includeJquery = 1
 
 # cat=plugin.tx_owlslider/general/010; type=string; label= JQuery Source: Change jQuery Source - per default it will be loaded from jquery.com
-plugin.tx_owlslider.jquery = http://code.jquery.com/jquery-1.11.0.min.js
+plugin.tx_owlslider.jquery = jquery-1.11.0.min.js
 
 plugin.tx_owlslider {
 	view {
