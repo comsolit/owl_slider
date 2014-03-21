@@ -1,57 +1,61 @@
-..  Editor configuration
-	...................................................
-	* utf-8 with BOM as encoding
-	* tab indent with 4 characters for code snippet.
-	* optional: soft carriage return preferred.
+﻿.. include:: Images.txt
 
-.. Includes roles, substitutions, ...
-.. include:: _IncludedDirectives.rst
+.. ==================================================
+.. FOR YOUR INFORMATION
+.. --------------------------------------------------
+.. -*- coding: utf-8 -*- with BOM.
 
-=================
-Extension Name
-=================
+.. ==================================================
+.. DEFINE SOME TEXTROLES
+.. --------------------------------------------------
+.. role::   underline
+.. role::   typoscript(code)
+.. role::   ts(typoscript)
+   :class:  typoscript
+.. role::   php(code)
 
-:Extension name: Slider
-:Extension key: owl_slider
-:Version: 0.1
-:Description: manuals covering TYPO3 extension "Slider"
-:Language: en
-:Author: Andres
-:Creation: 2014-02-26
-:Generation: 10:15
-:Licence: Open Content License available from `www.opencontent.org/opl.shtml <http://www.opencontent.org/opl.shtml>`_
+====================================
+EXT: Readable name of your extension
+====================================
 
-The content of this document is related to TYPO3, a GNU/GPL CMS/Framework available from `www.typo3.org
-<http://www.typo3.org/>`_
+:Created:
+      2010-02-18 17::3:3:
 
-**Table of Contents**
+:Changed by:
+      andres
+
+:Changed:
+      2014-03-19 16::4:6:
+
+:Classification:
+      extensionkey
+
+:Description:
+      The keywords help with categorizing and tagging of the manuals. You can combine two or more keywords and add additional keywords yourself. Please use at least one keyword from both lists. If your manual is NOT in english, see next tab "language" ---- forEditors (use this for editors / german "Redakteure") forAdmins (use this for Administrators) forDevelopers (use this for Developers) forBeginners (manuals covering TYPO3 basics) forIntermediates (manuals going into more depth) forAdvanced (covering the most advanced TYPO3 topics) see more: http://wiki.typo3.org/doc_template#tags ----
+
+:Keywords:
+      keywords comma-separated
+
+:Author:
+      Author Name
+
+:Email:
+      your@email.com
+
+:Info 4:
+
+
+:Language:
+      en
+
+
+|img-1| |img-2| EXT: owlSlider-owl\_sliderEXT: owlSlider
+
 
 .. toctree::
-	:maxdepth: 2
+   :maxdepth: 5
+   :titlesonly:
+   :glob:
 
-	ProjectInformation
-	UserManual
-	AdministratorManual
-	TyposcriptReference
-	DeveloperCorner
-	RestructuredtextHelp
+   ExtOwlslider/Index
 
-.. STILL TO ADD IN THIS DOCUMENT
-	@todo: add section about how screenshots can be automated. Pointer to PhantomJS could be added.
-	@todo: explain how documentation can be rendered locally and remotely.
-	@todo: explain what files should be versionned and what not (_build, Makefile, conf.py, ...)
-
-.. include:: ../Readme.rst
-
-What does it do?
-=================
-
-In this chapter should be given a brief overview of the extension. What does it do? What problem does it solve? Who is interested in this? Basically, this section includes everything people need to know to decide whether they should go on with this extension.
-
-.. figure:: Images/IntroductionPackage.png
-		:width: 500px
-		:alt: Introduction Package
-
-		Introduction Package just after installation (caption of the image)
-
-		How the Frontend of the Introduction Package looks like just after installation (legend of the image)
