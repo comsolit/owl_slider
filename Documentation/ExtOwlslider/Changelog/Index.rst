@@ -36,6 +36,15 @@ ChangeLog
    
    Changes
          Initial release
+         
+
+.. container:: table-row
+
+   Version
+         1.0.1
+   
+   Changes
+         added Documentation
 
 
 .. ###### END~OF~TABLE ######
