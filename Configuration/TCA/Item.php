@@ -6,10 +6,10 @@ if (!defined ('TYPO3_MODE')) {
 $TCA['tx_owlslider_domain_model_item'] = array(
 	'ctrl' => $TCA['tx_owlslider_domain_model_item']['ctrl'],
 	'interface' => array(
-		'showRecordFieldList' => 'sys_language_uid, l10n_parent, l10n_diffsource, hidden, itemname, itemimage',
+		'showRecordFieldList' => 'sys_language_uid, l10n_parent, l10n_diffsource, hidden, itemname, itemimage, itemlink',
 	),
 	'types' => array(
-		'1' => array('showitem' => 'sys_language_uid;;;;1-1-1, l10n_parent, l10n_diffsource, hidden;;1, itemname, itemimage,--div--;LLL:EXT:cms/locallang_ttc.xlf:tabs.access,starttime, endtime'),
+		'1' => array('showitem' => 'sys_language_uid;;;;1-1-1, l10n_parent, l10n_diffsource, hidden;;1, itemname, itemimage, itemlink,--div--;LLL:EXT:cms/locallang_ttc.xlf:tabs.access,starttime, endtime'),
 	),
 	'palettes' => array(
 		'1' => array('showitem' => ''),
@@ -115,6 +115,28 @@ $TCA['tx_owlslider_domain_model_item'] = array(
 				'allowed' => $GLOBALS['TYPO3_CONF_VARS']['GFX']['imagefile_ext'],
 				'disallowed' => '',
 			),
+		),
+		'itemlink' => array(
+			'exclude' => 0,
+			'label' => 'LLL:EXT:owl_slider/Resources/Private/Language/locallang_db.xlf:tx_owlslider_domain_model_item.itemlink',
+			'config'      => array(
+    		'type'     => 'input',
+    		'size'     => '15',
+    		'max'      => '255',
+    		'checkbox' => '',
+    		'eval'     => 'trim',
+    'wizards'  => array(
+      '_PADDING' => 2,
+      'link'     => array(
+        'type'         => 'popup',
+        'title'        => 'Link',
+        'icon'         => 'link_popup.gif',
+        'script'       => 'browse_links.php?mode=wizard',
+        'JSopenParams' => 'height=300,width=500,status=0,menubar=0,scrollbars=1'
+      )
+    ),
+	'softref' => 'typolink'
+  ),
 		),
 	),
 );

@@ -8,6 +8,7 @@ CREATE TABLE tx_owlslider_domain_model_item (
 
 	itemname varchar(255) DEFAULT '' NOT NULL,
 	itemimage text NOT NULL,
+	itemlink varchar(255) DEFAULT '' NOT NULL,
 
 	tstamp int(11) unsigned DEFAULT '0' NOT NULL,
 	crdate int(11) unsigned DEFAULT '0' NOT NULL,

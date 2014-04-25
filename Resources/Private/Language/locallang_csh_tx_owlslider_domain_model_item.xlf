@@ -3,12 +3,14 @@
 	<file source-language="en" datatype="plaintext" original="messages" date="2014-02-26T10:15:39Z" product-name="owl_slider">
 		<header/>
 		<body>
-
 			<trans-unit id="itemname.description">
 				<source>Item name</source>
 			</trans-unit>
 			<trans-unit id="itemimage.description">
 				<source>Item image</source>
+			</trans-unit>
+			<trans-unit id="itemlink.description">
+				<source>Item link</source>
 			</trans-unit>
 		</body>
 	</file>

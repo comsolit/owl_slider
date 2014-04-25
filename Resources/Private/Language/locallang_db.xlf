@@ -13,6 +13,9 @@
 			<trans-unit id="tx_owlslider_domain_model_item.itemimage">
 				<source>Itemimage</source>
 			</trans-unit>
+			<trans-unit id="tx_owlslider_domain_model_item.itemlink">
+				<source>Itemlink</source>
+			</trans-unit>
 
 		</body>
 	</file>

@@ -49,6 +49,13 @@ class Item extends \TYPO3\CMS\Extbase\DomainObject\AbstractEntity {
 	 * @validate NotEmpty
 	 */
 	protected $itemimage;
+	
+	/**
+	 * Item link
+	 *
+	 * @var \string
+	 */
+	protected $itemlink;
 
 	/**
 	 * Returns the itemname
@@ -86,6 +93,25 @@ class Item extends \TYPO3\CMS\Extbase\DomainObject\AbstractEntity {
 	 */
 	public function setItemimage($itemimage) {
 		$this->itemimage = $itemimage;
+	}
+	
+	/**
+	 * Returns the itemlink
+	 *
+	 * @return \string itemlink
+	 */
+	public function getItemlink() {
+		return $this->itemlink;
+	}
+	
+	/**
+	 * Sets the itemlink
+	 *
+	 * @param \string $itemlink
+	 * @return \string itemlink
+	 */
+	public function setItemlink($itemlink) {
+		$this->itemlink = $itemlink;
 	}
 
 }
