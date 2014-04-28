@@ -1,16 +1,18 @@
-{namespace owllink=Tx_OwlSlider_ViewHelpers} 
+{namespace owl=Tx_OwlSlider_ViewHelpers} 
 <f:layout name="Default" />
 
 <f:section name="main">
+
+<f:debug>{all}</f:debug>
 	<f:if condition="{items}">
 		<div id="owlslider">
 			<f:for each="{items}" as="item">
 				<div class="item">
 					<f:if condition="{item.itemlink}">
 						<f:then>
-							<owllink:typolink configuration="{item.itemlink}">
+							<owl:typolink parameter="{item.itemlink}">
 								<f:image class="lazyOwl" src="uploads/tx_owlslider/{item.itemimage}" height="120" alt="{item.itemname}" />
-							</owllink:typolink>
+							</owl:typolink>
 						</f:then>
 						<f:else>
 							<f:image class="lazyOwl" src="uploads/tx_owlslider/{item.itemimage}" height="120" alt="{item.itemname}" />
