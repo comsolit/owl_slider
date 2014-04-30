@@ -111,6 +111,7 @@ $TCA['tx_owlslider_domain_model_item'] = array(
 				'uploadfolder' => 'uploads/tx_owlslider',
 				'show_thumbs' => 1,
 				'minitems' => 1,
+				'size' => 1,
 				'maxitems' => 1,
 				'allowed' => $GLOBALS['TYPO3_CONF_VARS']['GFX']['imagefile_ext'],
 				'disallowed' => '',
