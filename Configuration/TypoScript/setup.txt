@@ -4,12 +4,19 @@ plugin.tx_owlslider {
 		partialRootPath = {$plugin.tx_owlslider.view.partialRootPath}
 		layoutRootPath = {$plugin.tx_owlslider.view.layoutRootPath}
 	}
+	
 	persistence {
 		storagePid = {$plugin.tx_owlslider.persistence.storagePid}
 	}
+	
 	features {
 		# uncomment the following line to enable the new Property Mapper.
 		# rewrittenPropertyMapper = 1
+	}
+	
+	settings {
+		slideHeight = {$plugin.tx_owlslider.configuration.slideHeight}
+		customNavigation = {$plugin.tx_owlslider.configuration.customNavigation}
 	}
 }
 

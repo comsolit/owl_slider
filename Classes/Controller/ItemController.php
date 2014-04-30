@@ -50,7 +50,7 @@ class ItemController extends \TYPO3\CMS\Extbase\Mvc\Controller\ActionController 
 	public function listAction() {
 		$items = $this->itemRepository->findAll();
 		$this->view->assign('items', $items);
-		$this->view->assign('configuration', $this->configuration);
+// 		$this->view->assign('configuration', $this->configuration);
 	}
 
 	/**

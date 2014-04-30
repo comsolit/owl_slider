@@ -17,6 +17,13 @@
 				<source>Item link</source>
 			</trans-unit>
 			
+			<trans-unit id="tx_owlslider_domain_model_item.next">
+				<source>Next</source>
+			</trans-unit>
+			<trans-unit id="tx_owlslider_domain_model_item.prev">
+				<source>Previous</source>
+			</trans-unit>
+			
 		</body>
 	</file>
 </xliff>
