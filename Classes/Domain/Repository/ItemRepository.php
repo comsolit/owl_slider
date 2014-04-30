@@ -33,6 +33,7 @@ namespace TYPO3\OwlSlider\Domain\Repository;
  *
  */
 class ItemRepository extends \TYPO3\CMS\Extbase\Persistence\Repository {
-
+	protected $defaultOrderings = array(
+         'sorting' => \TYPO3\CMS\Extbase\Persistence\QueryInterface::ORDER_ASCENDING);
 }
 ?>
