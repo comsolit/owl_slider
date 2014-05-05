@@ -3,9 +3,8 @@
 
 <f:section name="main">
 
-<f:debug>{all}</f:debug>
 	<f:if condition="{items}">
-		<div id="owlslider">
+		<div id="owlslider" class="owl-carousel owl-theme">
 			<f:for each="{items}" as="item">
 				<div class="item">
 					<f:if condition="{item.itemlink}">
@@ -25,4 +24,5 @@
 			<f:render partial="SliderNavigation" />
 		</f:if>
 	</f:if>
+	
 </f:section>
