@@ -12,7 +12,7 @@
 
 $EM_CONF[$_EXTKEY] = array(
 	'title' => 'owlSlider',
-	'description' => 'Touch enabled jQuery plugin that lets you create beautiful responsive carousel slider.',
+	'description' => 'Responsive carousel slider for TYPO3, Touch enabled based on the jQuery OWL Carousel.',
 	'category' => 'misc',
 	'author' => 'comsolit AG',
 	'author_email' => 'info@comsolit.com',
@@ -27,7 +27,7 @@ $EM_CONF[$_EXTKEY] = array(
 	'modify_tables' => '',
 	'clearCacheOnLoad' => 0,
 	'lockType' => '',
-	'version' => '1.0.1',
+	'version' => '1.1.0',
 	'constraints' => array(
 		'depends' => array(
 			'extbase' => '6.0',
