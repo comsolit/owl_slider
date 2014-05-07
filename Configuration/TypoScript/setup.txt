@@ -29,7 +29,7 @@ page.includeCSS {
     owlCarousel = EXT:owl_slider/Resources/Public/owl-carousel/owl.carousel.css
     owlTheme = EXT:owl_slider/Resources/Public/owl-carousel/owl.theme.css
     owlTransitions = EXT:owl_slider/Resources/Public/owl-carousel/owl.transitions.css
-    customNavigation = EXT:owl_slider/Resources/Public/owl-carousel/customNavigation.css
+    customNavigation = EXT:owl_slider/Resources/Public/owl-carousel/custom.css
 }
 
 ###############################################################################
