@@ -6,10 +6,10 @@ if (!defined ('TYPO3_MODE')) {
 $TCA['tx_owlslider_domain_model_item'] = array(
 	'ctrl' => $TCA['tx_owlslider_domain_model_item']['ctrl'],
 	'interface' => array(
-		'showRecordFieldList' => 'sys_language_uid, l10n_parent, l10n_diffsource, hidden, itemname, itemimage, itemlink',
+		'showRecordFieldList' => 'sys_language_uid, l10n_parent, l10n_diffsource, hidden, itemname, itemimage, itemlink, itemcontent',
 	),
 	'types' => array(
-		'1' => array('showitem' => 'sys_language_uid;;;;1-1-1, l10n_parent, l10n_diffsource, hidden;;1, itemname, itemimage, itemlink,--div--;LLL:EXT:cms/locallang_ttc.xlf:tabs.access,starttime, endtime'),
+		'1' => array('showitem' => 'sys_language_uid;;;;1-1-1, l10n_parent, l10n_diffsource, hidden;;1, itemname, itemimage, itemlink, itemcontent,--div--;LLL:EXT:cms/locallang_ttc.xlf:tabs.access,starttime, endtime'),
 	),
 	'palettes' => array(
 		'1' => array('showitem' => ''),
@@ -121,23 +121,44 @@ $TCA['tx_owlslider_domain_model_item'] = array(
 			'exclude' => 0,
 			'label' => 'LLL:EXT:owl_slider/Resources/Private/Language/locallang_db.xlf:tx_owlslider_domain_model_item.itemlink',
 			'config'      => array(
-    		'type'     => 'input',
-    		'size'     => '15',
-    		'max'      => '255',
-    		'checkbox' => '',
-    		'eval'     => 'trim',
-    'wizards'  => array(
-      '_PADDING' => 2,
-      'link'     => array(
-        'type'         => 'popup',
-        'title'        => 'Link',
-        'icon'         => 'link_popup.gif',
-        'script'       => 'browse_links.php?mode=wizard',
-        'JSopenParams' => 'height=300,width=500,status=0,menubar=0,scrollbars=1'
-      )
-    ),
-	'softref' => 'typolink'
-  ),
+    			'type'     => 'input',
+    			'size'     => '15',
+    			'max'      => '255',
+    			'checkbox' => '',
+    			'eval'     => 'trim',
+    			'wizards'  => array(
+      				'_PADDING' => 2,
+      				'link'     => array(
+        				'type'         => 'popup',
+        				'title'        => 'Link',
+        				'icon'         => 'link_popup.gif',
+        				'script'       => 'browse_links.php?mode=wizard',
+        				'JSopenParams' => 'height=300,width=500,status=0,menubar=0,scrollbars=1'
+      				)
+    			),
+				'softref' => 'typolink'
+  			),
+		),
+		'itemcontent' => array(
+			'exclude' => 1,
+			'label' => 'LLL:EXT:owl_slider/Resources/Private/Language/locallang_db.xlf:tx_owlslider_domain_model_item.itemcontent',
+			'defaultExtras' => 'richtext[*]',
+			'config' => array(
+				'type' => 'text',
+				'cols' => '30',
+				'rows' => '5',
+				'wizards' => array(
+					'_PADDING' => 2,
+					'RTE' => array(
+						'notNewRecords' => 1,
+						'RTEonly' => 1,
+						'type' => 'script',
+						'title' => 'Content',
+						'icon' => 'wizard_rte2.gif',
+						'script' => 'wizard_rte.php',
+					),
+				),
+			),
 		),
 	),
 );

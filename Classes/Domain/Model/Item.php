@@ -56,6 +56,13 @@ class Item extends \TYPO3\CMS\Extbase\DomainObject\AbstractEntity {
 	 * @var \string
 	 */
 	protected $itemlink;
+	
+	/**
+	 * Item content
+	 *
+	 * @var \string
+	 */
+	protected $itemcontent;
 
 	/**
 	 * Returns the itemname
@@ -112,6 +119,25 @@ class Item extends \TYPO3\CMS\Extbase\DomainObject\AbstractEntity {
 	 */
 	public function setItemlink($itemlink) {
 		$this->itemlink = $itemlink;
+	}
+	
+	/**
+	 * Returns the itemcontent
+	 *
+	 * @return \string $itemcontent
+	 */
+	public function getItemcontent() {
+		return $this->itemcontent;
+	}
+	
+	/**
+	 * Sets the itemcontent
+	 *
+	 * @param \string $itemcontent
+	 * @return void
+	 */
+	public function setItemcontent($itemcontent) {
+		$this->itemcontent = $itemcontent;
 	}
 
 }
