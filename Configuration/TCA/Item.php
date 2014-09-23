@@ -9,7 +9,7 @@ $TCA['tx_owlslider_domain_model_item'] = array(
 		'showRecordFieldList' => 'sys_language_uid, l10n_parent, l10n_diffsource, hidden, itemname, itemimage, itemlink, itemcontent',
 	),
 	'types' => array(
-		'1' => array('showitem' => 'sys_language_uid;;;;1-1-1, l10n_parent, l10n_diffsource, hidden;;1, itemname, itemimage, itemlink, itemcontent,--div--;LLL:EXT:cms/locallang_ttc.xlf:tabs.access,starttime, endtime'),
+		'1' => array('showitem' => 'sys_language_uid;;;;1-1-1, l10n_parent, l10n_diffsource, hidden;;1, itemname, itemimage, itemlink, itemcontent;;;richtext:rte_transform[mode=ts_links], column_offset,--div--;LLL:EXT:cms/locallang_ttc.xlf:tabs.access,starttime, endtime'),
 	),
 	'palettes' => array(
 		'1' => array('showitem' => ''),
@@ -140,22 +140,20 @@ $TCA['tx_owlslider_domain_model_item'] = array(
   			),
 		),
 		'itemcontent' => array(
-			'exclude' => 1,
+			'exclude' => 0,
 			'label' => 'LLL:EXT:owl_slider/Resources/Private/Language/locallang_db.xlf:tx_owlslider_domain_model_item.itemcontent',
-			'defaultExtras' => 'richtext[*]',
 			'config' => array(
 				'type' => 'text',
 				'cols' => '30',
 				'rows' => '5',
 				'wizards' => array(
-					'_PADDING' => 2,
 					'RTE' => array(
-						'notNewRecords' => 1,
-						'RTEonly' => 1,
-						'type' => 'script',
-						'title' => 'Content',
 						'icon' => 'wizard_rte2.gif',
+						'notNewRecords'=> 1,
+						'RTEonly' => 1,
 						'script' => 'wizard_rte.php',
+						'title' => 'LLL:EXT:cms/locallang_ttc.xlf:bodytext.W.RTE',
+						'type' => 'script'
 					),
 				),
 			),
