@@ -1,0 +1,35 @@
+<T3DataStructure>
+	<meta>
+        <langDisable>1</langDisable>
+  	</meta>
+	<sheets>
+    	<sDEF>
+      		<ROOT>
+        		<TCEforms>
+          			<sheetTitle>LLL:EXT:contactinformation/Resources/Private/Language/locallang_db.xlf:tx_owlslider_domain_model_item.slidertype</sheetTitle>
+        		</TCEforms>
+        		<type>array</type>
+        		<el>
+        			<settings.slidertype>
+   						<TCEforms>
+    						<label></label>
+    						<config>
+     							<type>select</type>
+      							<items type="array">
+									<numIndex index="0" type="array">
+										<numIndex index="0">Red</numIndex>
+										<numIndex index="1">1</numIndex>
+									</numIndex>
+									<numIndex index="1" type="array">
+										<numIndex index="0">Green</numIndex>
+										<numIndex index="1">2</numIndex>
+									</numIndex>
+								</items>
+    						</config>
+    					</TCEforms>
+ 					</settings.slidertype>
+        		</el>
+        	</ROOT>
+        </sDEF>
+    </sheets>
+</T3DataStructure>
