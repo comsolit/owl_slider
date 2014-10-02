@@ -50,7 +50,7 @@ class ItemController extends \TYPO3\CMS\Extbase\Mvc\Controller\ActionController 
 	public function listAction() {
 		$items = $this->itemRepository->findAll();
 		$this->view->assign('items', $items);
-// 		$this->view->assign('configuration', $this->configuration);
+		$this->view->assign('slidertype', $this->settings['slidertype']);
 	}
 
 	/**
@@ -61,63 +61,6 @@ class ItemController extends \TYPO3\CMS\Extbase\Mvc\Controller\ActionController 
 	 */
 	public function showAction(\TYPO3\OwlSlider\Domain\Model\Item $item) {
 		$this->view->assign('item', $item);
-	}
-
-	/**
-	 * action new
-	 *
-	 * @param \TYPO3\OwlSlider\Domain\Model\Item $newItem
-	 * @dontvalidate $newItem
-	 * @return void
-	 */
-	public function newAction(\TYPO3\OwlSlider\Domain\Model\Item $newItem = NULL) {
-		$this->view->assign('newItem', $newItem);
-	}
-
-	/**
-	 * action create
-	 *
-	 * @param \TYPO3\OwlSlider\Domain\Model\Item $newItem
-	 * @return void
-	 */
-	public function createAction(\TYPO3\OwlSlider\Domain\Model\Item $newItem) {
-		$this->itemRepository->add($newItem);
-		$this->flashMessageContainer->add('Your new Item was created.');
-		$this->redirect('list');
-	}
-
-	/**
-	 * action edit
-	 *
-	 * @param \TYPO3\OwlSlider\Domain\Model\Item $item
-	 * @return void
-	 */
-	public function editAction(\TYPO3\OwlSlider\Domain\Model\Item $item) {
-		$this->view->assign('item', $item);
-	}
-
-	/**
-	 * action update
-	 *
-	 * @param \TYPO3\OwlSlider\Domain\Model\Item $item
-	 * @return void
-	 */
-	public function updateAction(\TYPO3\OwlSlider\Domain\Model\Item $item) {
-		$this->itemRepository->update($item);
-		$this->flashMessageContainer->add('Your Item was updated.');
-		$this->redirect('list');
-	}
-
-	/**
-	 * action delete
-	 *
-	 * @param \TYPO3\OwlSlider\Domain\Model\Item $item
-	 * @return void
-	 */
-	public function deleteAction(\TYPO3\OwlSlider\Domain\Model\Item $item) {
-		$this->itemRepository->remove($item);
-		$this->flashMessageContainer->add('Your Item was removed.');
-		$this->redirect('list');
 	}
 
 }

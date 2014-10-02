@@ -7,12 +7,12 @@ if (!defined('TYPO3_MODE')) {
 	'TYPO3.' . $_EXTKEY,
 	'Owlslider',
 	array(
-		'Item' => 'list, show, new, create, edit, update, delete',
+		'Item' => 'list, show',
 		
 	),
 	// non-cacheable actions
 	array(
-		'Item' => 'create, update, delete',
+		'Item' => '',
 		
 	)
 );
