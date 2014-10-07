@@ -17,6 +17,40 @@ plugin.tx_owlslider {
 	settings {
 		slideHeight = {$plugin.tx_owlslider.configuration.slideHeight}
 		customNavigation = {$plugin.tx_owlslider.configuration.customNavigation}
+		items = {$plugin.tx_owlslider.configuration.items}
+		itemsDesktop = {$plugin.tx_owlslider.configuration.itemsdesktop}
+		itemsDesktopSmall = {$plugin.tx_owlslider.configuration.itemsdesktopsmall}
+		itemsTablet = {$plugin.tx_owlslider.configuration.itemstablet}
+		itemsTabletSmall = {$plugin.tx_owlslider.configuration.itemstabletsmall}
+		itemsMobile = {$plugin.tx_owlslider.configuration.itemsmobile}
+		itemsCustom = {$plugin.tx_owlslider.configuration.itemscustom}
+		singleItem = {$plugin.tx_owlslider.configuration.singleitem}
+		itemsScaleUp = {$plugin.tx_owlslider.configuration.itemsscaleup}
+		slideSpeed = {$plugin.tx_owlslider.configuration.slidespeed}
+		paginationSpeed = {$plugin.tx_owlslider.configuration.paginationspeed}
+		rewindSpeed = {$plugin.tx_owlslider.configuration.rewindspeed}
+		autoPlay = {$plugin.tx_owlslider.configuration.autoplay}
+		stopOnHover = {$plugin.tx_owlslider.configuration.stoponhover}
+		navigation = {$plugin.tx_owlslider.configuration.navigation}
+		navigationText = {$plugin.tx_owlslider.configuration.navigationtext}
+		rewindNav = {$plugin.tx_owlslider.configuration.rewindnav}
+		scrollPerPage = {$plugin.tx_owlslider.configuration.scrollperpage}
+		pagination = {$plugin.tx_owlslider.configuration.pagination}
+		paginationNumbers = {$plugin.tx_owlslider.configuration.paginationnumbers}
+		responsive = {$plugin.tx_owlslider.configuration.responsive}
+		responsiveRefreshRate = {$plugin.tx_owlslider.configuration.responsiverefreshrate}
+		responsiveBaseWidth = {$plugin.tx_owlslider.configuration.responsivebasewidth}
+		baseClass = {$plugin.tx_owlslider.configuration.baseclass}
+		theme = {$plugin.tx_owlslider.configuration.theme}
+		lazyLoad = {$plugin.tx_owlslider.configuration.lazyload}
+		lazyFollow = {$plugin.tx_owlslider.configuration.lazyfollow}
+		lazyEffect = {$plugin.tx_owlslider.configuration.lazyeffect}
+		autoHeight = {$plugin.tx_owlslider.configuration.autoheight}
+		dragBeforeAnimFinish = {$plugin.tx_owlslider.configuration.dragbeforeanimfinish}
+		mouseDrag = {$plugin.tx_owlslider.configuration.mousedrag}
+		touchDrag = {$plugin.tx_owlslider.configuration.touchdrag}
+		addClassActive = {$plugin.tx_owlslider.configuration.addclassactive}
+		transitionStyle = {$plugin.tx_owlslider.configuration.transitionstyle}
 	}
 }
 
@@ -34,6 +68,7 @@ page.includeCSS {
 
 ###############################################################################
 
+
 # Include javascript files
 page {
 	includeJSFooter {
@@ -44,61 +79,5 @@ page {
 	  		if.isTrue = {$plugin.tx_owlslider.includeJquery}
 	  	}
 		owlslider = EXT:owl_slider/Resources/Public/owl-carousel/owl.carousel.js
-	}
-	
-	jsFooterInline {
-		9999 = TEXT
-	  	9999.value (
-			jQuery(document).ready(function() {
-				var slider = $('#owlslider');
-	
-				slider.owlCarousel({
-					
-					items : {$plugin.tx_owlslider.configuration.items},
-					itemsDesktop : {$plugin.tx_owlslider.configuration.itemsdesktop},
-					itemsDesktopSmall : {$plugin.tx_owlslider.configuration.itemsdesktopsmall},
-					itemsTablet : {$plugin.tx_owlslider.configuration.itemstablet},
-					itemsTabletSmall : {$plugin.tx_owlslider.configuration.itemstabletsmall},
-					itemsMobile : {$plugin.tx_owlslider.configuration.itemsmobile},
-					itemsCustom : {$plugin.tx_owlslider.configuration.itemscustom},
-					singleItem : {$plugin.tx_owlslider.configuration.singleitem},
-					itemsScaleUp : {$plugin.tx_owlslider.configuration.itemsscaleup},
-					slideSpeed : {$plugin.tx_owlslider.configuration.slidespeed},
-					paginationSpeed : {$plugin.tx_owlslider.configuration.paginationspeed},
-					rewindSpeed : {$plugin.tx_owlslider.configuration.rewindspeed},
-					autoPlay : {$plugin.tx_owlslider.configuration.autoplay},
-					stopOnHover : {$plugin.tx_owlslider.configuration.stoponhover},
-					navigation : {$plugin.tx_owlslider.configuration.navigation},
-					navigationText : {$plugin.tx_owlslider.configuration.navigationtext},
-					rewindNav : {$plugin.tx_owlslider.configuration.rewindnav},
-					scrollPerPage : {$plugin.tx_owlslider.configuration.scrollperpage},
-					pagination : {$plugin.tx_owlslider.configuration.pagination},
-					paginationNumbers : {$plugin.tx_owlslider.configuration.paginationnumbers},
-					responsive : {$plugin.tx_owlslider.configuration.responsive},
-					responsiveRefreshRate : {$plugin.tx_owlslider.configuration.responsiverefreshrate},
-					responsiveBaseWidth : {$plugin.tx_owlslider.configuration.responsivebasewidth},
-					baseClass : {$plugin.tx_owlslider.configuration.baseclass},
-					theme : {$plugin.tx_owlslider.configuration.theme},
-					lazyLoad : {$plugin.tx_owlslider.configuration.lazyload},
-					lazyFollow : {$plugin.tx_owlslider.configuration.lazyfollow},
-					lazyEffect : {$plugin.tx_owlslider.configuration.lazyeffect},
-					autoHeight : {$plugin.tx_owlslider.configuration.autoheight},
-					dragBeforeAnimFinish : {$plugin.tx_owlslider.configuration.dragbeforeanimfinish},
-					mouseDrag : {$plugin.tx_owlslider.configuration.mousedrag},
-					touchDrag : {$plugin.tx_owlslider.configuration.touchdrag},
-					addClassActive : {$plugin.tx_owlslider.configuration.addclassactive},
-					transitionStyle : {$plugin.tx_owlslider.configuration.transitionstyle},
-					
-				});
-	
-				// Custom Navigation
-				$(".next").click(function() {
-					slider.trigger('owl.next');
-				})
-				$(".prev").click(function() {
-					slider.trigger('owl.prev');
-				})
-			});
-		)
 	}
 }		

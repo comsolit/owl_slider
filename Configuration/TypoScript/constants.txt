@@ -88,9 +88,9 @@ plugin.tx_owlslider {
 		# cat=plugin.tx_owlslider//a; type=string; label=transitionStyle: Add CSS3 transition style. Works only with one item on screen.
 		transitionstyle = false
 		
-		# cat=plugin.tx_owlslider//a; type=int+; label=slideHeight: sets the height of the slides in px.
-		slideHeight = 120
+		
 		# cat=plugin.tx_owlslider//a; type=options[true,false]; label=customNavigation: displays a custom navigation beyond the slider if true. Set false by default.
 		customNavigation = false
+		
 	}	
 }

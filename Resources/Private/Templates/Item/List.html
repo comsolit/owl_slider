@@ -1,33 +1,12 @@
-{namespace owl=Tx_OwlSlider_ViewHelpers} 
 <f:layout name="Default" />
 
 <f:section name="main">
-
 	<f:if condition="{items}">
-		<div id="owlslider" class="owl-carousel owl-theme">
-			<f:for each="{items}" as="item">
-				<div class="item">
-					<f:if condition="{item.itemimage}">
-						<f:if condition="{item.itemlink}">
-							<f:then>
-								<owl:typolink parameter="{item.itemlink}">
-									<f:image class="lazyOwl" src="uploads/tx_owlslider/{item.itemimage}" height="{settings.slideHeight}" alt="{item.itemname}" />
-								</owl:typolink>
-							</f:then>
-							<f:else>
-								<f:image class="lazyOwl" src="uploads/tx_owlslider/{item.itemimage}" height="{settings.slideHeight}" alt="{item.itemname}" />
-							</f:else>
-						</f:if>
-					</f:if>
-					<f:if condition="{item.itemcontent}">
-						<div><f:format.html>{item.itemcontent}</f:format.html></div>
-					</f:if>
-				</div>
-			</f:for>
-		</div>
-		<f:if condition="{settings.customNavigation}">
-			<f:render partial="SliderNavigation" />
+		<f:if condition="{settings.slidertype} == 1">
+			<f:render partial="SimpleOwl" arguments="{_all}" />
+		</f:if>
+		<f:if condition="{settings.slidertype} == 2">
+			<f:render partial="SyncedOwls" arguments="{_all}" />
 		</f:if>
 	</f:if>
-	
 </f:section>

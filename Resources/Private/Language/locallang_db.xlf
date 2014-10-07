@@ -19,6 +19,9 @@
 			<trans-unit id="tx_owlslider_domain_model_item.itemcontent">
 				<source>Itemcontent</source>
 			</trans-unit>
+			<trans-unit id="tx_owlslider_domain_model_item.slidertype">
+				<source>Slider Type</source>
+			</trans-unit>
 
 		</body>
 	</file>

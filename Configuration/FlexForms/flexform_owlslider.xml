@@ -6,7 +6,7 @@
     	<sDEF>
       		<ROOT>
         		<TCEforms>
-          			<sheetTitle>LLL:EXT:contactinformation/Resources/Private/Language/locallang_db.xlf:tx_owlslider_domain_model_item.slidertype</sheetTitle>
+          			<sheetTitle>LLL:EXT:owl_slider/Resources/Private/Language/locallang_db.xlf:tx_owlslider_domain_model_item.slidertype</sheetTitle>
         		</TCEforms>
         		<type>array</type>
         		<el>
@@ -17,11 +17,11 @@
      							<type>select</type>
       							<items type="array">
 									<numIndex index="0" type="array">
-										<numIndex index="0">Red</numIndex>
+										<numIndex index="0">Simple Owl</numIndex>
 										<numIndex index="1">1</numIndex>
 									</numIndex>
 									<numIndex index="1" type="array">
-										<numIndex index="0">Green</numIndex>
+										<numIndex index="0">Synced Owls</numIndex>
 										<numIndex index="1">2</numIndex>
 									</numIndex>
 								</items>
