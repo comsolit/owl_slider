@@ -29,6 +29,8 @@
 	</f:for>
 </div>
 
+
+
 <owl:pageRenderer.addJsFooterInlineCode name="owlslider" >
 	$(document).ready(function() {
     	var sync1 = $("#sync1");
@@ -56,7 +58,6 @@
 			pagination : <f:format.raw value="{settings.pagination}" />,
 			paginationNumbers : <f:format.raw value="{settings.paginationNumbers}" />,
 			responsive : <f:format.raw value="{settings.responsive}" />,
-			responsiveRefreshRate : <f:format.raw value="{settings.responsiveRefreshRate}" />,
 			responsiveBaseWidth : <f:format.raw value="{settings.responsiveBaseWidth}" />,
 			baseClass : <f:format.raw value="{settings.baseClass}" />,
 			theme : <f:format.raw value="{settings.theme}" />,
@@ -70,6 +71,7 @@
 			addClassActive : <f:format.raw value="{settings.addClassActive}" />,
 			transitionStyle : <f:format.raw value="{settings.transitionStyle}" />,
 			afterAction : syncPosition,
+			responsiveRefreshRate : <f:format.raw value="{settings.responsiveRefreshRate}" />,
     	});
      
     	sync2.owlCarousel({
@@ -106,7 +108,7 @@
 			mouseDrag : <f:format.raw value="{settings.mouseDrag}" />,
 			touchDrag : <f:format.raw value="{settings.touchDrag}" />,
 			addClassActive : <f:format.raw value="{settings.addClassActive}" />,
-			transitionStyle : <f:format.raw value="{settings.transitionStyle}" />,
+			transitionStyle : false,
 		    afterInit : function(el){
 		    	el.find(".owl-item").eq(0).addClass("synced");
     		}
@@ -119,6 +121,7 @@
 		    .removeClass("synced")
 		    .eq(current)
 		    .addClass("synced")
+		    
 		    if($("#sync2").data("owlCarousel") !== undefined){
 		    	center(current)
 	    	}
@@ -131,8 +134,8 @@
 	    });
 	     
 	    function center(number){
-		    var sync2visible = sync2.data("owlCarousel").owl.visibleItems;
-		    var num = number;
+		    var sync2visible = sync2.data("owlCarousel").owl.userItems;
+			var num = number;
 		    var found = false;
 		    for(var i in sync2visible){
 		    	if(num === sync2visible[i]){
@@ -140,6 +143,7 @@
 		   		}
 	    	}
 	    	if(found===false){
+	
 	    		if(num>sync2visible[sync2visible.length-1]){
 	    			sync2.trigger("owl.goTo", num - sync2visible.length+2)
 	    		}else{
@@ -153,7 +157,7 @@
 	   			} else if(num === sync2visible[0]){
 	    			sync2.trigger("owl.goTo", num-1)
 	    		}
-	   		}
+	    	} 
 	});
 	    
 	    window.onload = function() {
