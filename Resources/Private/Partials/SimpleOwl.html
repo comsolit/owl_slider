@@ -1,4 +1,4 @@
-{namespace owl=Tx_OwlSlider_ViewHelpers}
+{namespace owl=TYPO3\OwlSlider\ViewHelpers}
 
 <div id="owlslider" class="owl-carousel owl-theme">
 	<f:for each="{items}" as="item">
@@ -25,7 +25,7 @@
 	<f:render partial="SliderNavigation" />
 </f:if>
 
-<owl:pageRenderer.addJsFooterInlineCode name="owlslider" >
+<owl:addJsFooterInlineCode name="owlslider" >
 	jQuery(document).ready(function() {
 		var slider = $('#owlslider');
 		slider.owlCarousel({
@@ -72,4 +72,4 @@
 			slider.trigger('owl.prev');
 		})
 	});
-</owl:pageRenderer.addJsFooterInlineCode>
+</owl:addJsFooterInlineCode>

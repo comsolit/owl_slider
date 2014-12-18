@@ -1,4 +1,4 @@
-{namespace owl=Tx_OwlSlider_ViewHelpers}
+{namespace owl=TYPO3\OwlSlider\ViewHelpers}
 
 <div id="sync1" class="owl-carousel">
 	<f:for each="{items}" as="item">
@@ -31,7 +31,7 @@
 
 
 
-<owl:pageRenderer.addJsFooterInlineCode name="owlslider" >
+<owl:addJsFooterInlineCode name="owlslider" >
 	$(document).ready(function() {
     	var sync1 = $("#sync1");
     	var sync2 = $("#sync2");
@@ -171,4 +171,4 @@
 	           	}
 	       	}
 		}
-</owl:pageRenderer.addJsFooterInlineCode>
+</owl:addJsFooterInlineCode>

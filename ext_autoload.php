@@ -1,6 +1,6 @@
 <?php 
-$extensionClassesPath = t3lib_extMgm::extPath('owl_slider') . 'Classes/';
+$extensionClassesPath = \TYPO3\CMS\Core\Utility\ExtensionManagementUtility::extPath('owl_slider') . 'Classes/';
 return array(
-		'Tx_OwlSlider_ViewHelpers_TypolinkViewHelper' => $extensionClassesPath . 'ViewHelpers/TypolinkViewHelper.php',
-		'Tx_OwlSlider_ViewHelpers_PageRenderer_AddJsFooterInlineCodeViewHelper' => $extensionClassesPath . 'ViewHelpers/PageRenderer/AddJsFooterInlineCodeViewHelper.php',
+		'TYPO3\OwlSlider\ViewHelpers\TypolinkViewHelper' => $extensionClassesPath . 'ViewHelpers/TypolinkViewHelper.php',
+		'TYPO3\OwlSlider\ViewHelpers\AddJsFooterInlineCodeViewHelper' => $extensionClassesPath . 'ViewHelpers/AddJsFooterInlineCodeViewHelper.php',
 );
