@@ -32,9 +32,9 @@
 
 
 <owl:addJsFooterInlineCode name="owlslider" >
-	$(document).ready(function() {
-    	var sync1 = $("#sync1");
-    	var sync2 = $("#sync2");
+	jQuery(document).ready(function() {
+    	var sync1 = jQuery("#sync1");
+    	var sync2 = jQuery("#sync2");
      
     	sync1.owlCarousel({
     		items : 1,
@@ -116,20 +116,20 @@
      
 	    function syncPosition(el){
 		    var current = this.currentItem;
-		    $("#sync2")
+		    jQuery("#sync2")
 		    .find(".owl-item")
 		    .removeClass("synced")
 		    .eq(current)
 		    .addClass("synced")
 		    
-		    if($("#sync2").data("owlCarousel") !== undefined){
+		    if(jQuery("#sync2").data("owlCarousel") !== undefined){
 		    	center(current)
 	    	}
 	    }
      
-	    $("#sync2").on("click", ".owl-item", function(e){
+	    jQuery("#sync2").on("click", ".owl-item", function(e){
 		    e.preventDefault();
-		    var number = $(this).data("owlItem");
+		    var number = jQuery(this).data("owlItem");
 		    sync1.trigger("owl.goTo",number);
 	    });
 	     
