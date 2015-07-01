@@ -27,7 +27,7 @@
 
 <owl:addJsFooterInlineCode name="owlslider" >
 	jQuery(document).ready(function() {
-		var slider = $('#owlslider');
+		var slider = jQuery('#owlslider');
 		slider.owlCarousel({
 			items : <f:format.raw value="{settings.items}" />,
 			itemsDesktop : <f:format.raw value="{settings.itemsDesktop}" />,
@@ -65,10 +65,10 @@
 			transitionStyle : <f:format.raw value="{settings.transitionStyle}" />,
 		});
 		// Custom Navigation
-		$(".next").click(function() {
+		jQuery(".next").click(function() {
 			slider.trigger('owl.next');
 		})
-		$(".prev").click(function() {
+		jQuery(".prev").click(function() {
 			slider.trigger('owl.prev');
 		})
 	});
