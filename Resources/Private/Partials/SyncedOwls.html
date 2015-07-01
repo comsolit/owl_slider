@@ -31,7 +31,7 @@
 
 
 
-<owl:addJsFooterInlineCode name="owlslider" >
+<owl:addJsFooterInlineCode name="owlslider_{settings.slider_id}" >
 	jQuery(document).ready(function() {
     	var sync1 = jQuery("#sync1_{settings.slider_id}");
     	var sync2 = jQuery("#sync2_{settings.slider_id}");
@@ -161,7 +161,7 @@
 	});
 	    
 	    window.onload = function() {
-	   		var anchorElements = document.getElementById('sync2').getElementsByTagName('a');
+	   		var anchorElements = document.getElementById('sync2_{settings.slider_id}').getElementsByTagName('a');
 	   		for (var i in anchorElements)
 	       	anchorElements[i].onclick = function() {
 	       		if(this.target === '') {
