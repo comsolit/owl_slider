@@ -1,6 +1,6 @@
 {namespace owl=TYPO3\OwlSlider\ViewHelpers}
 
-<div id="sync1" class="owl-carousel">
+<div id="sync1_{settings.slider_id}" class="owl-carousel">
 	<f:for each="{items}" as="item">
 		<div class="item">
 			<f:if condition="{item.itemimage}">
@@ -19,7 +19,7 @@
 		</div>
 	</f:for>
 </div>
-<div id="sync2" class="owl-carousel">
+<div id="sync2_{settings.slider_id}" class="owl-carousel">
 	<f:for each="{items}" as="item">
 		<f:if condition="{item.itemcontent}">
 			<div class="item">
@@ -31,10 +31,10 @@
 
 
 
-<owl:addJsFooterInlineCode name="owlslider" >
-	$(document).ready(function() {
-    	var sync1 = $("#sync1");
-    	var sync2 = $("#sync2");
+<owl:addJsFooterInlineCode name="owlslider_{settings.slider_id}" >
+	jQuery(document).ready(function() {
+    	var sync1 = jQuery("#sync1_{settings.slider_id}");
+    	var sync2 = jQuery("#sync2_{settings.slider_id}");
      
     	sync1.owlCarousel({
     		items : 1,
@@ -116,20 +116,20 @@
      
 	    function syncPosition(el){
 		    var current = this.currentItem;
-		    $("#sync2")
+		    sync2
 		    .find(".owl-item")
 		    .removeClass("synced")
 		    .eq(current)
 		    .addClass("synced")
 		    
-		    if($("#sync2").data("owlCarousel") !== undefined){
+		    if(sync2.data("owlCarousel") !== undefined){
 		    	center(current)
 	    	}
 	    }
      
-	    $("#sync2").on("click", ".owl-item", function(e){
+	    sync2.on("click", ".owl-item", function(e){
 		    e.preventDefault();
-		    var number = $(this).data("owlItem");
+		    var number = jQuery(this).data("owlItem");
 		    sync1.trigger("owl.goTo",number);
 	    });
 	     
@@ -161,7 +161,7 @@
 	});
 	    
 	    window.onload = function() {
-	   		var anchorElements = document.getElementById('sync2').getElementsByTagName('a');
+	   		var anchorElements = document.getElementById('sync2_{settings.slider_id}').getElementsByTagName('a');
 	   		for (var i in anchorElements)
 	       	anchorElements[i].onclick = function() {
 	       		if(this.target === '') {

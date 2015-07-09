@@ -1,6 +1,6 @@
 {namespace owl=TYPO3\OwlSlider\ViewHelpers}
 
-<div id="owlslider" class="owl-carousel owl-theme">
+<div id="owlslider_{settings.slider_id}" class="owl-carousel owl-theme">
 	<f:for each="{items}" as="item">
 		<div class="item">
 			<f:if condition="{item.itemimage}">
@@ -25,9 +25,9 @@
 	<f:render partial="SliderNavigation" />
 </f:if>
 
-<owl:addJsFooterInlineCode name="owlslider" >
+<owl:addJsFooterInlineCode name="owlslider_{settings.slider_id}" >
 	jQuery(document).ready(function() {
-		var slider = $('#owlslider');
+		var slider = jQuery('#owlslider_{settings.slider_id}');
 		slider.owlCarousel({
 			items : <f:format.raw value="{settings.items}" />,
 			itemsDesktop : <f:format.raw value="{settings.itemsDesktop}" />,
@@ -65,10 +65,10 @@
 			transitionStyle : <f:format.raw value="{settings.transitionStyle}" />,
 		});
 		// Custom Navigation
-		$(".next").click(function() {
+		jQuery(".customNavigation_{settings.slider_id} .next").click(function() {
 			slider.trigger('owl.next');
 		})
-		$(".prev").click(function() {
+		jQuery(".customNavigation_{settings.slider_id} .prev").click(function() {
 			slider.trigger('owl.prev');
 		})
 	});
