@@ -1,6 +1,6 @@
 {namespace owl=TYPO3\OwlSlider\ViewHelpers}
 
-<div id="sync1_{settings.slider_id}" class="owl-carousel">
+<div id="{f:if(condition:'{settings.slider_id}',then:'sync1_{settings.slider_id}',else:'sync1')}" class="owl-carousel">
 	<f:for each="{items}" as="item">
 		<div class="item">
 			<f:if condition="{item.itemimage}">
@@ -19,7 +19,8 @@
 		</div>
 	</f:for>
 </div>
-<div id="sync2_{settings.slider_id}" class="owl-carousel">
+
+<div id="{f:if(condition:'{settings.slider_id}',then:'sync2_{settings.slider_id}',else:'sync2')}" class="owl-carousel">
 	<f:for each="{items}" as="item">
 		<f:if condition="{item.itemcontent}">
 			<div class="item">
@@ -29,12 +30,10 @@
 	</f:for>
 </div>
 
-
-
 <owl:addJsFooterInlineCode name="owlslider_{settings.slider_id}" >
 	jQuery(document).ready(function() {
-    	var sync1 = jQuery("#sync1_{settings.slider_id}");
-    	var sync2 = jQuery("#sync2_{settings.slider_id}");
+			var sync1 = "{settings.slider_id}" ? jQuery("#sync1_{settings.slider_id}") : jQuery("#sync1");
+			var sync2 = "{settings.slider_id}" ? jQuery("#sync2_{settings.slider_id}") : jQuery("#sync2");
      
     	sync1.owlCarousel({
     		items : 1,
@@ -159,16 +158,21 @@
 	    		}
 	    	} 
 	});
-	    
-	    window.onload = function() {
-	   		var anchorElements = document.getElementById('sync2_{settings.slider_id}').getElementsByTagName('a');
-	   		for (var i in anchorElements)
-	       	anchorElements[i].onclick = function() {
-	       		if(this.target === '') {
-	           		window.open(this.href, '_self', false);
-	           	} else {
-	           		window.open(this.href, this.target);
-	           	}
-	       	}
-		}
+
+  window.onload = function() {
+    var anchorElements =
+      document
+        .getElementById('{settings.slider_id}' ? 'sync2_{settings.slider_id}' : 'sync2')
+        .getElementsByTagName('a');
+
+    for (var i in anchorElements) {
+      anchorElements[i].onclick = function() {
+        if(this.target === '') {
+          window.open(this.href, '_self', false);
+        } else {
+          window.open(this.href, this.target);
+        }
+      }
+    }
+  }
 </owl:addJsFooterInlineCode>

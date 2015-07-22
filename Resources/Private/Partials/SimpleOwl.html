@@ -1,6 +1,6 @@
 {namespace owl=TYPO3\OwlSlider\ViewHelpers}
 
-<div id="owlslider_{settings.slider_id}" class="owl-carousel owl-theme">
+<div id="{f:if(condition:'{settings.slider_id}',then:'owlslider_{settings.slider_id}',else:'owlslider')}" class="owl-carousel owl-theme">
 	<f:for each="{items}" as="item">
 		<div class="item">
 			<f:if condition="{item.itemimage}">
@@ -27,7 +27,7 @@
 
 <owl:addJsFooterInlineCode name="owlslider_{settings.slider_id}" >
 	jQuery(document).ready(function() {
-		var slider = jQuery('#owlslider_{settings.slider_id}');
+		var slider = jQuery('{settings.slider_id}' ? '#owlslider_{settings.slider_id}' : '#owlslider');
 		slider.owlCarousel({
 			items : <f:format.raw value="{settings.items}" />,
 			itemsDesktop : <f:format.raw value="{settings.itemsDesktop}" />,
@@ -64,12 +64,15 @@
 			addClassActive : <f:format.raw value="{settings.addClassActive}" />,
 			transitionStyle : <f:format.raw value="{settings.transitionStyle}" />,
 		});
-		// Custom Navigation
-		jQuery(".customNavigation_{settings.slider_id} .next").click(function() {
-			slider.trigger('owl.next');
-		})
-		jQuery(".customNavigation_{settings.slider_id} .prev").click(function() {
-			slider.trigger('owl.prev');
-		})
-	});
+
+    // Custom Navigation
+    jQuery('{settings.slider_id}' ? '.customNavigation_{settings.slider_id} .next' : '.customNavigation .next')
+      .click(function() {
+        slider.trigger('owl.next');
+      });
+    jQuery('{settings.slider_id}' ? '.customNavigation_{settings.slider_id} .prev' : '.customNavigation .prev')
+      .click(function() {
+        slider.trigger('owl.prev');
+      });
+  });
 </owl:addJsFooterInlineCode>
