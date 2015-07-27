@@ -1,22 +1,22 @@
 .customNavigation {
-	text-align: center;
+  text-align: center;
 }
 
 .prev, .next {
-	background: none repeat scroll 0 0 #869791;
-    border-radius: 30px;
-    color: #FFFFFF;
-    display: inline-block;
-    margin: 5px;
-    opacity: 0.5;
-    padding: 5px 9px 7px;
-    cursor: pointer;
+  background: none repeat scroll 0 0 #869791;
+  border-radius: 30px;
+  color: #FFFFFF;
+  display: inline-block;
+  margin: 5px;
+  opacity: 0.5;
+  padding: 5px 9px 7px;
+  cursor: pointer;
 }
 
 .prev:hover, .next:hover {
-	opacity: 1;
+  opacity: 1;
 }
-    
+
 /* Bootstrap icon sprites */
 [class^="icon-"],
 [class*=" icon-"] {
@@ -52,7 +52,7 @@
   background-image: url("glyphicons-halflings-white.png");
 }
 .icon-glass {
-  background-position: 0      0;
+  background-position: 0 0;
 }
 .icon-music {
   background-position: -24px 0;
@@ -474,4 +474,3 @@
 .icon-fullscreen {
   background-position: -456px -144px;
 }
-

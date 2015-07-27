@@ -1,12 +1,12 @@
 <f:layout name="Default" />
 
 <f:section name="main">
-	<f:if condition="{items}">
-		<f:if condition="{settings.slidertype} == 1">
-			<f:render partial="SimpleOwl" arguments="{_all}" />
-		</f:if>
-		<f:if condition="{settings.slidertype} == 2">
-			<f:render partial="SyncedOwls" arguments="{_all}" />
-		</f:if>
-	</f:if>
+  <f:if condition="{items}">
+    <f:if condition="{settings.slidertype} == 1">
+      <f:render partial="SimpleOwl" arguments="{_all}" />
+    </f:if>
+    <f:if condition="{settings.slidertype} == 2">
+      <f:render partial="SyncedOwls" arguments="{_all}" />
+    </f:if>
+  </f:if>
 </f:section>

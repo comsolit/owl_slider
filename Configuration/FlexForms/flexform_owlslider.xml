@@ -1,43 +1,43 @@
 <T3DataStructure>
-	<meta>
-        <langDisable>1</langDisable>
-  	</meta>
-	<sheets>
-    	<sDEF>
-      		<ROOT>
-        		<TCEforms>
-          			<sheetTitle>LLL:EXT:owl_slider/Resources/Private/Language/locallang_db.xlf:tx_owlslider_domain_model_item.slidertype</sheetTitle>
-        		</TCEforms>
-        		<type>array</type>
-        		<el>
-        			<settings.slidertype>
-   					<TCEforms>
-	    					<label></label>
-	    					<config>
-	     						<type>select</type>
-	      						<items type="array">
-								<numIndex index="0" type="array">
-									<numIndex index="0">Simple Owl</numIndex>
-									<numIndex index="1">1</numIndex>
-								</numIndex>
-								<numIndex index="1" type="array">
-									<numIndex index="0">Synced Owls</numIndex>
-									<numIndex index="1">2</numIndex>
-								</numIndex>
-							</items>
-	    					</config>
-    					</TCEforms>
- 				</settings.slidertype>
- 				<settings.slider_id>
-   					<TCEforms>
-	    					<label>Slider ID (only required if more then 1 Slider is used)</label>
-	    					<config>
-	     						<type>input</type>
-	    					</config>
-	    				</TCEforms>
- 				</settings.slider_id>
-        		</el>
-        	</ROOT>
-        </sDEF>
-    </sheets>
+  <meta>
+    <langDisable>1</langDisable>
+  </meta>
+  <sheets>
+    <sDEF>
+      <ROOT>
+        <TCEforms>
+          <sheetTitle>LLL:EXT:owl_slider/Resources/Private/Language/locallang_db.xlf:tx_owlslider_domain_model_item.slidertype</sheetTitle>
+        </TCEforms>
+        <type>array</type>
+        <el>
+          <settings.slidertype>
+            <TCEforms>
+              <label></label>
+              <config>
+                <type>select</type>
+                <items type="array">
+                  <numIndex index="0" type="array">
+                    <numIndex index="0">Simple Owl</numIndex>
+                    <numIndex index="1">1</numIndex>
+                  </numIndex>
+                  <numIndex index="1" type="array">
+                    <numIndex index="0">Synced Owls</numIndex>
+                    <numIndex index="1">2</numIndex>
+                  </numIndex>
+                </items>
+              </config>
+            </TCEforms>
+          </settings.slidertype>
+          <settings.slider_id>
+            <TCEforms>
+              <label>Slider ID (only required if more then 1 Slider is used)</label>
+              <config>
+                <type>input</type>
+              </config>
+            </TCEforms>
+          </settings.slider_id>
+        </el>
+      </ROOT>
+    </sDEF>
+  </sheets>
 </T3DataStructure>
