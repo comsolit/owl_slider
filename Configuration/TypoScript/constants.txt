@@ -5,8 +5,8 @@
 # cat=plugin.tx_owlslider/jquery/001; type=boolean; label= Include JQuery?: You can enable or disable JQuery in your project
 plugin.tx_owlslider.includeJquery = 1
 
-# cat=plugin.tx_owlslider/jquery/002; type=string; label= JQuery Source: Change jQuery Source - per default it will be loaded from jquery.com
-plugin.tx_owlslider.jquery = jquery-1.11.0.min.js
+# cat=plugin.tx_owlslider/jquery/002; type=string; label= JQuery Source: Change jQuery Source
+plugin.tx_owlslider.jquery = jquery-1.11.3.min.js
 
 plugin.tx_owlslider {
   view {
