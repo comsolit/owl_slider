@@ -145,7 +145,12 @@ $TCA['tx_owlslider_domain_model_item'] = array(
                         'type' => 'popup',
                         'title' => 'Link',
                         'icon' => 'link_popup.gif',
-                        'script' => 'browse_links.php?mode=wizard',
+                    	'module' => array(
+                    			'name' => 'wizard_element_browser',
+                    			'urlParamters' => array(
+                    					'mode' => 'wizard'
+                    			)
+                    	),
                         'JSopenParams' => 'height=300,width=500,status=0,menubar=0,scrollbars=1'
                     )
                 ),
@@ -164,12 +169,16 @@ $TCA['tx_owlslider_domain_model_item'] = array(
                         'icon' => 'wizard_rte2.gif',
                         'notNewRecords' => 1,
                         'RTEonly' => 1,
-                        'script' => 'wizard_rte.php',
+                       	'module' => array(
+                            'name' => 'wizard_rte'
+                       	),
+                        'wizard_rte',
                         'title' => 'LLL:EXT:cms/locallang_ttc.xlf:bodytext.W.RTE',
                         'type' => 'script'
                     )
                 )
-            )
+            ),
+            'defaultExtras' => 'richtext:rte_transform[mode=ts_css]'
         )
     )
 );
