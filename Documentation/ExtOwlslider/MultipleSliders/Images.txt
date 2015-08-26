@@ -1,0 +1,27 @@
+﻿.. |img-21|     image:: ../Images/manual_html_8f08e0f.jpg
+   :height: 335
+   :width: 669
+.. :align: left
+.. :border: 0
+.. :name: Image3
+
+.. |img-22|     image:: ../Images/manual_html_m38b4a1ae.jpg
+   :height: 127
+   :width: 669
+.. :align: left
+.. :border: 0
+.. :name: Image1
+
+.. |img-23|     image:: ../Images/manual_html_4af0e106.jpg
+   :height: 329
+   :width: 669
+.. :align: left
+.. :border: 0
+.. :name: Image4
+
+.. |img-24|     image:: ../Images/manual_html_156b3657.jpg
+   :height: 389
+   :width: 669
+.. :align: left
+.. :border: 0
+.. :name: Image5
