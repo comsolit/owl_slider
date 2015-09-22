@@ -14,8 +14,8 @@
 .. role::   php(code)
 
 
-Custom navigation
-====================
+Custom navigation and text
+==============================
 
 You can replace this type of navigation:
   .. image:: /images/Configuration_Nav01.png
