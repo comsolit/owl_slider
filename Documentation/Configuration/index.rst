@@ -30,54 +30,45 @@ Properties
 
 .. container:: ts-properties
 
-	==================================== ================================================================================================================ ============== ===============
-	Property                             Description                                                                                                      Sheet          Type
-	==================================== ================================================================================================================ ============== ===============
-	items                                This variable allows you to set the maximum amount of items displayed at a time with the widest browser width.                               General         string
-	itemsDesktop                       	 This allows you to preset the number of slides visible with a particular browser width. The format is [x,y] whereby x=browser width and y=number of slides displayed. For example [1199,4] means that if(window<=1199){ show 4 slides per page } Alternatively use itemsDesktop: false to override these settings.          																			              General         string
-	itemsDesktopSmall                    As above.                																			              General         string
-	itemsTablet                          As above.                    General         string
-	itemsTabletSmall                  	 As above. Default value is disabled.                         General         string
-	itemsMobile                 		 As above.                 General         boolean
-	itemCustom                   		 This allows you to add custom variations of items depending from the width If this option is set, itemsDeskop, itemsDesktopSmall, itemsTablet, itemsMobile etc. are disabled For better preview, order the arrays by screen size, but it's not mandatory Don't forget to include the lowest available screen size, otherwise it will take the default one for screens lower than lowest available. Example: [[0, 2], [400, 4], [700, 6], [1000, 8], [1200, 10], [1600, 16]]                               General         int
-	singleItem                     		 Display only one item.                      General         string
-	itemsScaleUp                  		 Option to not stretch items when it is less than the supplied items.                    General         string
-	slideSpeed                  		 Slide speed in milliseconds.                              General         string
-	paginationSpeed                      Pagination speed in milliseconds. 				General         string
-	rewindSpeed                 		 Rewind speed in milliseconds.       General         string
-	autoPlay                        	 Change to any number for example autoPlay : 5000 to play every 5 seconds.                     General         string
-	stopOnHover                          Stop autoplay on mouse hover.                             General         int
-	navigation                           Display "next" and "prev" buttons.        additional      int
-	navigationText                       You can customize your own text for navigation. To get empty buttons use navigationText : false. Also HTML can be used here.               additional      int
-	rewindNav                            Slide to first item. Use rewindSpeed to change animation speed.                   additional      int
-	scrollPerPage                        Scroll per page not per item. This affect next/prev buttons and mouse/touch dragging.				additional      int
-	pagination                           Show pagination.   	    additional      int
-	paginationNumbers                 	 Pagination speed in milliseconds.                Tags                                  additional      string
-	rewindSpeed                      	 Rewind speed in milliseconds.                   additional      boolean
-	autoPlay         					 Change to any number for example autoPlay : 5000 to play every 5 seconds.                        additional      int
-	stopOnHover                          Stop autoplay on mouse hover.                additional      boolean
-	navigation          				 Display "next" and "prev" buttons.					additional      boolean
-	navigationText                	 	 You can customize your own text for navigation. To get empty buttons use navigationText : false. Also HTML can be used here.               additional      boolean
-	rewindNav                    		 Slide to first item. Use rewindSpeed to change animation speed.          template        int
-	scrollPerPage                    	 Scroll per page not per item. This affect next/prev buttons and mouse/touch dragging. 			template        int
-	pagination                    		 Show pagination.           template        int
-	paginationNumbers                    Show numbers inside pagination buttons                       template        string
-	responsive							 You can use owlSlider on desktop-only websites too! Just change that to "false" to disable responsive capabilities
-	responsiveRefreshrate				 200 to check window width changes every 200ms for responsive actions.
-	responsiveBaseWidth					 owlSlider checks window for browser width changes. You can use any other jQuery element to check width changes for example ".owl-demo". Owl will change only if ".owl-demo" get new width.
-	baseClass							 Automatically added class for base CSS styles. Best not to change it if you don't need to.
-	theme								 Default Owl CSS styles for navigation and buttons. Change it to match your own theme.
-	lazyLoad							 Delays loading of images. Images outside of viewport won't be loaded before user scrolls to them. Great for mobile devices to speed up page loadings.
-	lazyFollow							 When pagination used, it skips loading the images from pages that got skipped. It only loads the images that get displayed in viewport. If set to false, all images get loaded when pagination used. It is a sub setting of the lazy load function.
-	lazyEffect							 Default is fadeIn on 400ms speed. Use 'false' to remove that effect.
-	autoHeight							 Add height to owl-wrapper-outer so you can use different heights on slides. Use it only for one item per page setting.
-	dragBeforeAnimFinish				 Ignore whether a transition is done or not (only dragging).
-	mouseDrag 							 Turn off/on mouse events.
-	touchDrag							 Turn off/on touch events.
-	addClassActive						 Add "active" classes on visible items. Works with any numbers of items on screen.
-	transitionStyle						 Add CSS3 transition style. Works only with one item on screen.
-	customNavigation				     displays a custom navigation beyond the slider if true. Set false by default.
-	==================================== ================================================================================================================ ============== ===============
+	=========================== ============================================================ ============
+	Property                    Description                                                  Type
+	=========================== ============================================================ ============
+	items						Set the maximum amount of items displayed 	   			  	 int+
+	itemsDesktop				Preset the number of slides visible						 	 string
+	itemsDesktopSmall			As above                									 string
+	itemsTablet					As above                 									 string
+	itemsTabletSmall			As above. Default value is disabled                     	 string
+	itemsMobile					As above                 									 string
+	itemCustom					Add custom variations of items depending from the width 	 string
+	singleItem					Display only one item.                      				 option
+	itemsScaleUp				Option to not stretch items                     		  	 option
+	slideSpeed					Slide speed in milliseconds.                                 int+
+	paginationSpeed				Pagination speed in milliseconds. 			       			 int+
+	rewindSpeed					Rewind speed in milliseconds.       						 int+
+	autoPlay					Change to any number.                  	  				  	 string
+	stopOnHover					Stop autoplay on mouse hover.                         		 option
+	navigation					Display "next" and "prev" buttons.       					 option
+	navigationText				You can customize your own text for navigation. 			 string
+	rewindNav					Slide to first item. 										 option
+	scrollPerPage				Scroll per page not per item. 								 option
+	pagination					Show pagination.   	   								 	     option
+	paginationNumbers			Pagination speed in milliseconds.            			     option	
+	responsive					You can use owlSlider on desktop-only websites too! 	     option
+	responsiveRefreshrate		time to check window width for responsive actions.			 int+
+	responsiveBaseWidth			owlSlider checks window for browser width changes. 		  	 string
+	baseClass					Automatically added class for base CSS styles. 			  	 string
+	theme						Default Owl CSS styles for navigation and buttons. 	      	 string		  
+	lazyLoad					Delays loading of images. 									 option
+	lazyFollow					Skips loading 								 				 option
+	lazyEffect					Default is fadeIn on 400ms speed.							 string
+	autoHeight					Add height to owl-wrapper-outer 		 					 option
+	dragBeforeAnimFinish		Ignore whether a transition is done or not					 option
+	mouseDrag					Turn off/on mouse events.									 option
+	touchDrag					Turn off/on touch events.									 option
+	addClassActive				Add "active" classes on visible items. 					  	 option
+	transitionStyle				Add CSS3 transition style.									 string
+	customNavigation			displays a custom navigation beyond the slider if true. 	 option
+	=========================== ============================================================ ============
 
 .. _tsOrderBy:
 
