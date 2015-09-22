@@ -5,13 +5,18 @@
 .. --------------------------------------------------
 .. -*- coding: utf-8 -*- with BOM.
 
+.. ==================================================
+.. DEFINE SOME TEXTROLES
+.. --------------------------------------------------
+.. role::   underline
+.. role::   typoscript(code)
+.. role::   ts(typoscript)
+   :class:  typoscript
+.. role::   php(code)
+
 
 EXT: owlSlider
-<<<<<<< HEAD
-==============
-=======
 ================
->>>>>>> fc562289126de7877ff7651de0ab766b04609572
 
 	:Classification:
 		owl\_slider
@@ -32,12 +37,9 @@ EXT: owlSlider
 		This document is published under the Open Content License
 		available from http://www.opencontent.org/opl.shtml
 
-<<<<<<< HEAD
-The content of this document is related to TYPO3,
-a GNU/GPL CMS/Framework available from `www.typo3.org <http://www.typo3.org/>`_.
-=======
->>>>>>> fc562289126de7877ff7651de0ab766b04609572
 
+	The content of this document is related to TYPO3,
+	a GNU/GPL CMS/Framework available from `www.typo3.org <http://www.typo3.org/>`_.
 
 
 .. toctree::
