@@ -17,7 +17,7 @@
 Multiple sliders
 ----------------
 
-If you want, you can have multiple sliders on the same page:
+With this extension you can have multiple sliders on the same page:
 
 .. image:: /images/Multipage_Sliders.png
 
