@@ -6,14 +6,18 @@
 Modus
 =============
 
-.. only:: html
-
 	In the backend you can choose between two modus "single" or "synced".
+<<<<<<< HEAD
 .. image:: ../../images/modus_backend.png
+=======
+	
+.. image:: /images/modus_backend.png
+>>>>>>> 061b531fdfb95095b7ba41e9578b99c58fe7639d
 
 Single
 ------
 
+With the single mode you can display a single slider.
 
 
 Synced

@@ -15,7 +15,11 @@
 
 
 Custom navigation and text
+<<<<<<< HEAD
 ===========================
+=======
+==============================
+>>>>>>> 061b531fdfb95095b7ba41e9578b99c58fe7639d
 
 You can replace this type of navigation:
 
