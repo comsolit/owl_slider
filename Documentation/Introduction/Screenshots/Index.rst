@@ -13,7 +13,8 @@ Here you find some screenshots from frontend and backend.
 Frontend
 --------
 
-.. image:: /images/screenshot_frontend.png
+
+.. image:: ../../images/screenshot_frontend.png
 
 
 Choose between "single" and "synced" type
@@ -21,11 +22,11 @@ Choose between "single" and "synced" type
 
 Type "single"
 """""""""""""
-.. image:: /images/screenshot-single.png
+.. image:: ../../images/screenshot-single.png
 
 Type "synced"
 """""""""""""
-.. image:: /images/screenshot-synced.png
+.. image:: ../../images/screenshot-synced.png
 
 
 
@@ -35,12 +36,12 @@ Backend
 
 Plugin
 ^^^^^^
-.. image:: /images/modus_backend.png
+.. image:: ../../images/modus_backend.png
 
 
 Item
 ^^^^
-.. image:: /images/backend-item.png
+.. image:: ../../images/backend-item.png
 
 
 
