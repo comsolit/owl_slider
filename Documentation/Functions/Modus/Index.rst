@@ -7,12 +7,9 @@ Modus
 =============
 
 	In the backend you can choose between two modus "single" or "synced".
-<<<<<<< HEAD
-.. image:: ../../images/modus_backend.png
-=======
-	
-.. image:: /images/modus_backend.png
->>>>>>> 061b531fdfb95095b7ba41e9578b99c58fe7639d
+
+.. image:: ../../Images/modus_backend.png
+
 
 Single
 ------
@@ -25,7 +22,7 @@ Synced
 
 If you want your slider look like something like this
 
-.. image:: ../../images/SyncedOwles_Slider.png
+.. image:: ../../Images/SyncedOwles_Slider.png
 
 
 The each content-element of a slide is synchronized with its slide-element. 
@@ -38,7 +35,7 @@ In order to make your slider look like “Synced Owls”-version you
 simply need to choose Synced Owls oprion in the dropdown menu by
 editing the slider-element on your page in backend like shown below:
 
-.. image:: ../../images/modus-wahl.png
+.. image:: ../../Images/modus-wahl.png
 
 
 

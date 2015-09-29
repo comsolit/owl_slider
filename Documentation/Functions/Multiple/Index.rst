@@ -21,24 +21,24 @@ With this extension you can have multiple sliders on the same page:
 
 For example:
 
-.. image:: ../../images/Multipage_Sliders.png
+.. image:: ../../Images/Multipage_Sliders.png
 
-.. image:: ../../images/Multipage_SlidersFrontend.png
+.. image:: ../../Images/Multipage_SlidersFrontend.png
 
 Create a sysfolders with owlslider items:
 """"""""""""""""""""""""""""""""""""""""""
 
 
-.. image:: ../../images/Multipage_sysfolder.png
+.. image:: ../../Images/Multipage_sysfolder.png
 
 
 
 Set the Record Storage Page for each slider:
 """""""""""""""""""""""""""""""""""""""""""""
-.. image:: ../../images/Multipage_RecordStorage.png
+.. image:: ../../Images/Multipage_RecordStorage.png
 
 
 
 Set the Slider Id:
 """"""""""""""""""
-.. image:: ../../images/Multipage_sliderID.png
+.. image:: ../../Images/Multipage_sliderID.png

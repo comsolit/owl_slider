@@ -3,16 +3,17 @@
 .. --------------------------------------------------
 .. -*- coding: utf-8 -*- with BOM.
 
-.. _introduction:
 
-Introduction
-============
+Function
+========
 
-	This chapter gives you a basic introduction about the TYPO3 CMS extension "*owl_slider*".
+
+	This chapter gives you information about the basic functions of the extension "*owl_slider*".
 
 .. toctree::
 	:maxdepth: 5
 	:titlesonly:
 
-	about/index
-	screenshots/index
+	Modus/Index
+	Customnavigation/Index
+	Multiple/Index

@@ -15,25 +15,21 @@
 
 
 Custom navigation and text
-<<<<<<< HEAD
-===========================
-=======
 ==============================
->>>>>>> 061b531fdfb95095b7ba41e9578b99c58fe7639d
 
 You can replace this type of navigation:
 
-  .. image:: ../../images/Configuration_Nav01.png
+  .. image:: ../../Images/Configuration_Nav01.png
 
   
 with this one:
 
-  .. image:: ../../images/Configuration_Nav02.png
+  .. image:: ../../Images/Configuration_Nav02.png
 
   
 To do so you need to set  **customNavigation** true in the backend:
 
-  .. image:: ../../images/Configuration_CustNav.png
+  .. image:: ../../Images/Configuration_CustNav.png
 
   
 .. note::
@@ -48,7 +44,7 @@ You can add some text to each sliding image by adding content in the
 “Rich Text Editor” in backend-menu of every Item or just one or two
 Items you want to upload:
 
-  .. image:: ../../images/Configuration_Content.png
+  .. image:: ../../Images/Configuration_Content.png
 
 
 This content will be displayed beneath the slide you've chosen.
@@ -62,7 +58,7 @@ off because there is not enough space for all of them, you need to
 specify the maximum amount of images that will be displayed on your
 page by changing the following  **items** setting:
 
-  .. image:: ../../images/Configuration_Items.png
+  .. image:: ../../Images/Configuration_Items.png
 
   
 For mobile Webpages that are being displayed on Smartphones and
@@ -71,7 +67,7 @@ should be specified if the default specifications don't fit.
 
 e.g.
 
-  .. image:: ../../images/Configuration_ItemsMobil.png
+  .. image:: ../../Images/Configuration_ItemsMobil.png
 
 
 The format is [x,y] whereby x=browser width and y=number of slides

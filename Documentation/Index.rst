@@ -7,11 +7,7 @@
 
 
 EXT: owlSlider
-<<<<<<< HEAD
 ==============
-=======
-================
->>>>>>> fc562289126de7877ff7651de0ab766b04609572
 
 	:Classification:
 		owl\_slider
@@ -32,12 +28,6 @@ EXT: owlSlider
 		This document is published under the Open Content License
 		available from http://www.opencontent.org/opl.shtml
 
-<<<<<<< HEAD
-The content of this document is related to TYPO3,
-a GNU/GPL CMS/Framework available from `www.typo3.org <http://www.typo3.org/>`_.
-=======
->>>>>>> fc562289126de7877ff7651de0ab766b04609572
-
 
 
 .. toctree::
@@ -45,9 +35,9 @@ a GNU/GPL CMS/Framework available from `www.typo3.org <http://www.typo3.org/>`_.
    :titlesonly:
    :glob:
 
-   introduction/index
-   installation/index
-   functions/index
-   configuration/index
-   changelog/index
+   Introduction/Index
+   Installation/Index
+   Functions/Index
+   Configuration/Index
+   Changelog/Index
 

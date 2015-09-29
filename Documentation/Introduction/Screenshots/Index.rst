@@ -14,7 +14,7 @@ Frontend
 --------
 
 
-.. image:: ../../images/screenshot_frontend.png
+.. image:: ../../Images/screenshot_frontend.png
 
 
 Choose between "single" and "synced" type
@@ -22,11 +22,11 @@ Choose between "single" and "synced" type
 
 Type "single"
 """""""""""""
-.. image:: ../../images/screenshot-single.png
+.. image:: ../../Images/screenshot-single.png
 
 Type "synced"
 """""""""""""
-.. image:: ../../images/screenshot-synced.png
+.. image:: ../../Images/screenshot-synced.png
 
 
 
@@ -36,12 +36,12 @@ Backend
 
 Plugin
 ^^^^^^
-.. image:: ../../images/modus_backend.png
+.. image:: ../../Images/modus_backend.png
 
 
 Item
 ^^^^
-.. image:: ../../images/backend-item.png
+.. image:: ../../Images/backend-item.png
 
 
 
