@@ -21,21 +21,60 @@ plugin.tx_owlslider {
     # cat=plugin.tx_owlslider/storage/001; type=int+; label=Default storage PID
     storagePid = 
   }
-
-  
-  
-
-  
-  
- 
-
-
+  configuration {
+    # cat=plugin.tx_owlslider/slider/001; type=int+; label=items: This variable allows you to set the maximum amount of items displayed at a time with the widest browser width.
+    items = 5
+    # cat=plugin.tx_owlslider/slider/002; type=string; label=itemsDesktop: This allows you to preset the number of slides visible with a particular browser width. The format is [x,y] whereby x=browser width and y=number of slides displayed. For example [1199,4] means that if(window<=1199){ show 4 slides per page } Alternatively use itemsDesktop: false to override these settings.
+    itemsdesktop = [1199,4]
+    # cat=plugin.tx_owlslider/slider/003; type=string; label=itemsDesktopSmall: As above.
+    itemsdesktopsmall = [979,3]
+    # cat=plugin.tx_owlslider/slider/004; type=string; label=itemsTablet: As above.
+    itemstablet = [768,2]
+    # cat=plugin.tx_owlslider/slider/005; type=string; label=itemsTabletSmall: As above. Default value is disabled.
+    itemstabletsmall = false
+    # cat=plugin.tx_owlslider/slider/006; type=string; label=itemsMobile: As above.
+    itemsmobile = [479,1]
+    # cat=plugin.tx_owlslider/slider/007; type=string; label=itemCustom:  This allows you to add custom variations of items depending from the width If this option is set, itemsDeskop, itemsDesktopSmall, itemsTablet, itemsMobile etc. are disabled For better preview, order the arrays by screen size, but it's not mandatory Don't forget to include the lowest available screen size, otherwise it will take the default one for screens lower than lowest available. Example: [[0, 2], [400, 4], [700, 6], [1000, 8], [1200, 10], [1600, 16]]
+    itemscustom = false
+    # cat=plugin.tx_owlslider/slider/008; type=options[true,false]; label=singleItem: Display only one item.
+    singleitem = false
+    # cat=plugin.tx_owlslider/slider/009; type=options[true,false]; label=itemsScaleUp: Option to not stretch items when it is less than the supplied items.
+    itemsscaleup = false
+    # cat=plugin.tx_owlslider/slider/010; type=int+; label=slideSpeed: Slide speed in milliseconds.
+    slidespeed = 200
+    # cat=plugin.tx_owlslider/slider/011; type=int+; label=paginationSpeed: Pagination speed in milliseconds.
+    paginationspeed = 800
+    # cat=plugin.tx_owlslider/slider/012; type=int+; label=rewindSpeed: Rewind speed in milliseconds.
+    rewindspeed = 1000
+    # cat=plugin.tx_owlslider/slider/013; type=string; label=autoPlay: Change to any number for example autoPlay : 5000 to play every 5 seconds.
+    autoplay = false
+    # cat=plugin.tx_owlslider/slider/014; type=options[true,false]; label=stopOnHover: Stop autoplay on mouse hover.
+    stoponhover = false
+    # cat=plugin.tx_owlslider/slider/015; type=options[true,false]; label=navigation: Display "next" and "prev" buttons.
+    navigation = false
+    # cat=plugin.tx_owlslider/slider/016; type=string; label=navigationText: You can customize your own text for navigation. To get empty buttons use navigationText : false. Also HTML can be used here.
+    navigationtext = ["prev","next"]
+    # cat=plugin.tx_owlslider/slider/017; type=options[true,false]; label=rewindNav: Slide to first item. Use rewindSpeed to change animation speed. 
+    rewindnav = true
+    # cat=plugin.tx_owlslider/slider/018; type=options[true,false]; label=scrollPerPage: Scroll per page not per item. This affect next/prev buttons and mouse/touch dragging.
+    scrollperpage = false
+    # cat=plugin.tx_owlslider/slider/019; type=options[true,false]; label=pagination: Show pagination.
+    pagination = true
+    # cat=plugin.tx_owlslider/slider/020 type=options[true,false]; label=paginationNumbers: Show numbers inside pagination buttons
+    paginationnumbers = false
+    # cat=plugin.tx_owlslider/slider/021; type=options[true,false]; label=responsive: You can use owlSlider on desktop-only websites too! Just change that to "false" to disable responsive capabilities
     responsive = true
+    # cat=plugin.tx_owlslider/slider/022; type=int+; label=responsiveRefreshrate: 200 to check window width changes every 200ms for responsive actions.
     responsiverefreshrate = 200
+    # cat=plugin.tx_owlslider/slider/023; type=string; label=responsiveBaseWidth: owlSlider checks window for browser width changes. You can use any other jQuery element to check width changes for example ".owl-demo". Owl will change only if ".owl-demo" get new width.
     responsivebasewidth = window
+    # cat=plugin.tx_owlslider/slider/024; type=string; label=baseClass: Automatically added class for base CSS styles. Best not to change it if you don't need to.
     baseclass = "owl-carousel"
+    # cat=plugin.tx_owlslider/slider/025; type=string; label=theme: Default Owl CSS styles for navigation and buttons. Change it to match your own theme.
     theme = "owl-theme"
+    # cat=plugin.tx_owlslider/slider/026; type=options[true,false]; label=lazyLoad: Delays loading of images. Images outside of viewport won't be loaded before user scrolls to them. Great for mobile devices to speed up page loadings.
     lazyload = false
+    # cat=plugin.tx_owlslider/slider/027; type=options[true,false]; label=lazyFollow: When pagination used, it skips loading the images from pages that got skipped. It only loads the images that get displayed in viewport. If set to false, all images get loaded when pagination used. It is a sub setting of the lazy load function.
     lazyfollow = true
     # cat=plugin.tx_owlslider/slider/028; type=string; label=lazyEffect: Default is fadeIn on 400ms speed. Use 'false' to remove that effect.
     lazyeffect = "fade"
