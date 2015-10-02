@@ -74,6 +74,5 @@ page {
       forceOnTop = 1
       if.isTrue = {$plugin.tx_owlslider.includeJquery}
     }
-    owlslider = EXT:owl_slider/Resources/Public/owl-carousel/owl.carousel.js
   }
 }

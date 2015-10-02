@@ -29,7 +29,19 @@ class AddJsFooterInlineCodeViewHelper extends \TYPO3\CMS\Fluid\Core\ViewHelper\A
     public function render($name, $compress = FALSE, $forceOnTop = FALSE)
     {
         $block = $this->renderChildren();
+        $pageRenderer = $this->getPageRenderer();
+
+        $pageRenderer->addJsFooterFile(\TYPO3\CMS\Core\Utility\ExtensionManagementUtility::extRelPath(owl_slider) . 'Resources/Public/owl-carousel/owl.carousel.js');
+
         $this->pageRenderer->addJsFooterInlineCode($name, $block, $compress, $forceOnTop);
         return NULL;
+    }
+
+    /**
+     * @return PageRenderer
+     */
+    private function getPageRenderer()
+    {
+        return \TYPO3\CMS\Core\Utility\GeneralUtility::makeInstance(\TYPO3\CMS\Core\Page\PageRenderer::class); //TODO:change to \TYPO3\CMS\Core\Page\PageRenderer::class since php 5.5
     }
 }
