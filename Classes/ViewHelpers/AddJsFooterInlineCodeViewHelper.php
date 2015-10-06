@@ -31,7 +31,7 @@ class AddJsFooterInlineCodeViewHelper extends \TYPO3\CMS\Fluid\Core\ViewHelper\A
         $block = $this->renderChildren();
         $pageRenderer = $this->getPageRenderer();
 
-        $pageRenderer->addJsFooterFile(\TYPO3\CMS\Core\Utility\ExtensionManagementUtility::extRelPath(owl_slider) . 'Resources/Public/owl-carousel/owl.carousel.js');
+        $pageRenderer->addJsFooterFile('EXT:owl_slider/Resources/Public/owl-carousel/owl.carousel.js');
 
         $this->pageRenderer->addJsFooterInlineCode($name, $block, $compress, $forceOnTop);
         return NULL;
