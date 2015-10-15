@@ -6,9 +6,7 @@
 
 Function
 ========
-
-
-	This chapter gives you information about the basic functions of the extension "*owl_slider*".
+This chapter gives you information about the basic functions of the extension "*owl_slider*".
 
 .. toctree::
 	:maxdepth: 5

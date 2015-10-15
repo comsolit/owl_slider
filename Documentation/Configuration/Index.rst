@@ -7,9 +7,7 @@
 
 Configuration
 =============
-
-	This chapter gives you a basic configuration about the TYPO3 CMS extension "*owl_slider*".
-
+This chapter gives you a basic configuration about the TYPO3 CMS extension "*owl_slider*".
 
 .. only:: html
 

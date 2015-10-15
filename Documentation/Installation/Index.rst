@@ -7,7 +7,6 @@
 ============
 Installation
 ============
-
 This walkthrough will help you to implement the extension owl_slider at your TYPO3 site.
 
 
@@ -19,7 +18,7 @@ This walkthrough will help you to implement the extension owl_slider at your TYP
 
 #. Include the Static TypoScript
 
-     .. image:: ../Images/UserManual_TypoScript.png
+    .. image:: ../Images/UserManual_TypoScript.png
 
      
 #. **Add Slider Items** Create new record. 

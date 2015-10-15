@@ -9,25 +9,25 @@
 EXT: owlSlider
 ==============
 
-	:Classification:
-		owl\_slider
 
-	:Language:
-		en
+:Classification:
+	owl\_slider
 
-	:Keywords:
-		slider, responsive, mobile, customizable, item-slider, jquery, desktop
+:Language:
+	en
 
-	:Copyright:
-		2014, Andres Lobacovs, info@comsolit.com
+:Keywords:
+	slider, responsive, mobile, customizable, item-slider, jquery, desktop
 
-	:Author:
-		Andres Lobacovs, info@comsolit.ch
+:Copyright:
+	2014, Andres Lobacovs, info@comsolit.com
 
-	:License:
-		This document is published under the Open Content License
-		available from http://www.opencontent.org/opl.shtml
+:Author:
+	Andres Lobacovs, info@comsolit.ch
 
+:License:
+	This document is published under the Open Content License
+	available from http://www.opencontent.org/opl.shtml
 
 
 .. toctree::

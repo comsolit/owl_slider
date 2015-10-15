@@ -9,7 +9,6 @@ Screenshots
 
 Here you find some screenshots from frontend and backend.
 
-
 Frontend
 --------
 
@@ -42,11 +41,6 @@ Plugin
 Item
 ^^^^
 .. image:: ../../Images/backend-item.png
-
-
-
-
-
 
 
 

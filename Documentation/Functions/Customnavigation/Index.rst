@@ -39,12 +39,11 @@ To do so you need to set  **customNavigation** true in the backend:
 
 Adding content to an image
 --------------------------
-
 You can add some text to each sliding image by adding content in the
-“Rich Text Editor” in backend-menu of every Item or just one or two
+"Rich Text Editor" in backend-menu of every Item or just one or two
 Items you want to upload:
 
-  .. image:: ../../Images/Configuration_Content.png
+.. image:: ../../Images/Configuration_Content.png
 
 
 This content will be displayed beneath the slide you've chosen.
@@ -58,7 +57,7 @@ off because there is not enough space for all of them, you need to
 specify the maximum amount of images that will be displayed on your
 page by changing the following  **items** setting:
 
-  .. image:: ../../Images/Configuration_Items.png
+.. image:: ../../Images/Configuration_Items.png
 
   
 For mobile Webpages that are being displayed on Smartphones and
@@ -67,9 +66,8 @@ should be specified if the default specifications don't fit.
 
 e.g.
 
-  .. image:: ../../Images/Configuration_ItemsMobil.png
+.. image:: ../../Images/Configuration_ItemsMobil.png
 
 
 The format is [x,y] whereby x=browser width and y=number of slides
 displayed.
-

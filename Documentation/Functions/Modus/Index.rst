@@ -5,8 +5,7 @@
 
 Modus
 =============
-
-	In the backend you can choose between two modus "single" or "synced".
+In the backend you can choose between two modus "single" or "synced".
 
 .. image:: ../../Images/modus_backend.png
 
