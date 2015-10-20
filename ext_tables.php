@@ -1,4 +1,7 @@
 <?php
+
+use TYPO3\CMS\Core\Utility\VersionNumberUtility;
+
 if (! defined('TYPO3_MODE')) {
     die('Access denied.');
 }
@@ -55,7 +58,9 @@ $TCA['tx_owlslider_domain_model_item'] = array(
         ),
         'searchFields' => 'itemname,itemimage,itemlink,',
         'dynamicConfigFile' => \TYPO3\CMS\Core\Utility\ExtensionManagementUtility::extPath($_EXTKEY) . 'Configuration/TCA/Item.php',
-        'iconfile' => 'EXT:owl_slider/Resources/Public/Icons/tx_owlslider_domain_model_item.png'
+        'iconfile' => strpos(VersionNumberUtility::getCurrentTypo3Version(), '7') === 0
+                ? 'EXT:owl_slider/Resources/Public/Icons/tx_owlslider_domain_model_item.png'
+                : \TYPO3\CMS\Core\Utility\ExtensionManagementUtility::extRelPath($_EXTKEY) . 'Resources/Public/Icons/tx_owlslider_domain_model_item.png'
     )
 );
 
