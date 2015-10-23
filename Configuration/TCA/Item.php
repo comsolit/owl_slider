@@ -137,20 +137,21 @@ $TCA['tx_owlslider_domain_model_item'] = array(
                 'type' => 'input',
                 'size' => '15',
                 'max' => '255',
-                'checkbox' => '',
                 'eval' => 'trim',
                 'wizards' => array(
                     '_PADDING' => 2,
                     'link' => array(
                         'type' => 'popup',
                         'title' => 'Link',
-                        'icon' => 'link_popup.gif',
-                    	'module' => array(
-                    			'name' => 'wizard_element_browser',
-                    			'urlParamters' => array(
-                    					'mode' => 'wizard'
-                    			)
-                    	),
+                        'icon' => \TYPO3\CMS\Core\Utility\GeneralUtility::compat_version('7.4')
+                                ? 'EXT:backend/Resources/Public/Images/FormFieldWizard/wizard_link.gif'
+                                : 'link_popup.gif',
+                        'module' => array(
+                            'name' => 'wizard_element_browser',
+                            'urlParameters' => array(
+                                'mode' => 'wizard'
+                            )
+                        ),
                         'JSopenParams' => 'height=300,width=500,status=0,menubar=0,scrollbars=1'
                     )
                 ),
@@ -166,7 +167,9 @@ $TCA['tx_owlslider_domain_model_item'] = array(
                 'rows' => '5',
                 'wizards' => array(
                     'RTE' => array(
-                        'icon' => 'wizard_rte2.gif',
+                        'icon' => \TYPO3\CMS\Core\Utility\GeneralUtility::compat_version('7.4')
+                            ? 'EXT:backend/Resources/Public/Images/FormFieldWizard/wizard_rte.gif'
+                            : 'wizard_rte2.gif',
                         'notNewRecords' => 1,
                         'RTEonly' => 1,
                        	'module' => array(
