@@ -1,8 +1,8 @@
-.customNavigation {
+.owl-carousel .customNavigation {
   text-align: center;
 }
 
-.prev, .next {
+.owl-carousel .prev, .owl-carousel .next {
   background: none repeat scroll 0 0 #869791;
   border-radius: 30px;
   color: #FFFFFF;
@@ -13,13 +13,13 @@
   cursor: pointer;
 }
 
-.prev:hover, .next:hover {
+.owl-carousel .prev:hover, .owl-carousel .next:hover {
   opacity: 1;
 }
 
 /* Bootstrap icon sprites */
-[class^="icon-"],
-[class*=" icon-"] {
+.owl-carousel [class^="icon-"],
+.owl-carousel [class*=" icon-"] {
   display: inline-block;
   width: 14px;
   height: 14px;
@@ -32,445 +32,445 @@
   margin-top: 4px;
 }
 /* White icons with optional class, or on hover/focus/active states of certain elements */
-.icon-white,
-.nav-pills > .active > a > [class^="icon-"],
-.nav-pills > .active > a > [class*=" icon-"],
-.nav-list > .active > a > [class^="icon-"],
-.nav-list > .active > a > [class*=" icon-"],
-.navbar-inverse .nav > .active > a > [class^="icon-"],
-.navbar-inverse .nav > .active > a > [class*=" icon-"],
-.dropdown-menu > li > a:hover > [class^="icon-"],
-.dropdown-menu > li > a:focus > [class^="icon-"],
-.dropdown-menu > li > a:hover > [class*=" icon-"],
-.dropdown-menu > li > a:focus > [class*=" icon-"],
-.dropdown-menu > .active > a > [class^="icon-"],
-.dropdown-menu > .active > a > [class*=" icon-"],
-.dropdown-submenu:hover > a > [class^="icon-"],
-.dropdown-submenu:focus > a > [class^="icon-"],
-.dropdown-submenu:hover > a > [class*=" icon-"],
-.dropdown-submenu:focus > a > [class*=" icon-"] {
+.owl-carousel .icon-white,
+.owl-carousel .nav-pills > .active > a > [class^="icon-"],
+.owl-carousel .nav-pills > .active > a > [class*=" icon-"],
+.owl-carousel .nav-list > .active > a > [class^="icon-"],
+.owl-carousel .nav-list > .active > a > [class*=" icon-"],
+.owl-carousel .navbar-inverse .nav > .active > a > [class^="icon-"],
+.owl-carousel .navbar-inverse .nav > .active > a > [class*=" icon-"],
+.owl-carousel .dropdown-menu > li > a:hover > [class^="icon-"],
+.owl-carousel .dropdown-menu > li > a:focus > [class^="icon-"],
+.owl-carousel .dropdown-menu > li > a:hover > [class*=" icon-"],
+.owl-carousel .dropdown-menu > li > a:focus > [class*=" icon-"],
+.owl-carousel .dropdown-menu > .active > a > [class^="icon-"],
+.owl-carousel .dropdown-menu > .active > a > [class*=" icon-"],
+.owl-carousel .dropdown-submenu:hover > a > [class^="icon-"],
+.owl-carousel .dropdown-submenu:focus > a > [class^="icon-"],
+.owl-carousel .dropdown-submenu:hover > a > [class*=" icon-"],
+.owl-carousel .dropdown-submenu:focus > a > [class*=" icon-"] {
   background-image: url("glyphicons-halflings-white.png");
 }
-.icon-glass {
+.owl-carousel .icon-glass {
   background-position: 0 0;
 }
-.icon-music {
+.owl-carousel .icon-music {
   background-position: -24px 0;
 }
-.icon-search {
+.owl-carousel .icon-search {
   background-position: -48px 0;
 }
-.icon-envelope {
+.owl-carousel .icon-envelope {
   background-position: -72px 0;
 }
-.icon-heart {
+.owl-carousel .icon-heart {
   background-position: -96px 0;
 }
-.icon-star {
+.owl-carousel .icon-star {
   background-position: -120px 0;
 }
-.icon-star-empty {
+.owl-carousel .icon-star-empty {
   background-position: -144px 0;
 }
-.icon-user {
+.owl-carousel .icon-user {
   background-position: -168px 0;
 }
-.icon-film {
+.owl-carousel .icon-film {
   background-position: -192px 0;
 }
-.icon-th-large {
+.owl-carousel .icon-th-large {
   background-position: -216px 0;
 }
-.icon-th {
+.owl-carousel .icon-th {
   background-position: -240px 0;
 }
-.icon-th-list {
+.owl-carousel .icon-th-list {
   background-position: -264px 0;
 }
-.icon-ok {
+.owl-carousel .icon-ok {
   background-position: -288px 0;
 }
-.icon-remove {
+.owl-carousel .icon-remove {
   background-position: -312px 0;
 }
-.icon-zoom-in {
+.owl-carousel .icon-zoom-in {
   background-position: -336px 0;
 }
-.icon-zoom-out {
+.owl-carousel .icon-zoom-out {
   background-position: -360px 0;
 }
-.icon-off {
+.owl-carousel .icon-off {
   background-position: -384px 0;
 }
-.icon-signal {
+.owl-carousel .icon-signal {
   background-position: -408px 0;
 }
-.icon-cog {
+.owl-carousel .icon-cog {
   background-position: -432px 0;
 }
-.icon-trash {
+.owl-carousel .icon-trash {
   background-position: -456px 0;
 }
-.icon-home {
+.owl-carousel .icon-home {
   background-position: 0 -24px;
 }
-.icon-file {
+.owl-carousel .icon-file {
   background-position: -24px -24px;
 }
-.icon-time {
+.owl-carousel .icon-time {
   background-position: -48px -24px;
 }
-.icon-road {
+.owl-carousel .icon-road {
   background-position: -72px -24px;
 }
-.icon-download-alt {
+.owl-carousel .icon-download-alt {
   background-position: -96px -24px;
 }
-.icon-download {
+.owl-carousel .icon-download {
   background-position: -120px -24px;
 }
-.icon-upload {
+.owl-carousel .icon-upload {
   background-position: -144px -24px;
 }
-.icon-inbox {
+.owl-carousel .icon-inbox {
   background-position: -168px -24px;
 }
-.icon-play-circle {
+.owl-carousel .icon-play-circle {
   background-position: -192px -24px;
 }
-.icon-repeat {
+.owl-carousel .icon-repeat {
   background-position: -216px -24px;
 }
-.icon-refresh {
+.owl-carousel .icon-refresh {
   background-position: -240px -24px;
 }
-.icon-list-alt {
+.owl-carousel .icon-list-alt {
   background-position: -264px -24px;
 }
-.icon-lock {
+.owl-carousel .icon-lock {
   background-position: -287px -24px;
 }
-.icon-flag {
+.owl-carousel .icon-flag {
   background-position: -312px -24px;
 }
-.icon-headphones {
+.owl-carousel .icon-headphones {
   background-position: -336px -24px;
 }
-.icon-volume-off {
+.owl-carousel .icon-volume-off {
   background-position: -360px -24px;
 }
-.icon-volume-down {
+.owl-carousel .icon-volume-down {
   background-position: -384px -24px;
 }
-.icon-volume-up {
+.owl-carousel .icon-volume-up {
   background-position: -408px -24px;
 }
-.icon-qrcode {
+.owl-carousel .icon-qrcode {
   background-position: -432px -24px;
 }
-.icon-barcode {
+.owl-carousel .icon-barcode {
   background-position: -456px -24px;
 }
-.icon-tag {
+.owl-carousel .icon-tag {
   background-position: 0 -48px;
 }
-.icon-tags {
+.owl-carousel .icon-tags {
   background-position: -25px -48px;
 }
-.icon-book {
+.owl-carousel .icon-book {
   background-position: -48px -48px;
 }
-.icon-bookmark {
+.owl-carousel .icon-bookmark {
   background-position: -72px -48px;
 }
-.icon-print {
+.owl-carousel .icon-print {
   background-position: -96px -48px;
 }
-.icon-camera {
+.owl-carousel .icon-camera {
   background-position: -120px -48px;
 }
-.icon-font {
+.owl-carousel .icon-font {
   background-position: -144px -48px;
 }
-.icon-bold {
+.owl-carousel .icon-bold {
   background-position: -167px -48px;
 }
-.icon-italic {
+.owl-carousel .icon-italic {
   background-position: -192px -48px;
 }
-.icon-text-height {
+.owl-carousel .icon-text-height {
   background-position: -216px -48px;
 }
-.icon-text-width {
+.owl-carousel .icon-text-width {
   background-position: -240px -48px;
 }
-.icon-align-left {
+.owl-carousel .icon-align-left {
   background-position: -264px -48px;
 }
-.icon-align-center {
+.owl-carousel .icon-align-center {
   background-position: -288px -48px;
 }
-.icon-align-right {
+.owl-carousel .icon-align-right {
   background-position: -312px -48px;
 }
-.icon-align-justify {
+.owl-carousel .icon-align-justify {
   background-position: -336px -48px;
 }
-.icon-list {
+.owl-carousel .icon-list {
   background-position: -360px -48px;
 }
-.icon-indent-left {
+.owl-carousel .icon-indent-left {
   background-position: -384px -48px;
 }
-.icon-indent-right {
+.owl-carousel .icon-indent-right {
   background-position: -408px -48px;
 }
-.icon-facetime-video {
+.owl-carousel .icon-facetime-video {
   background-position: -432px -48px;
 }
-.icon-picture {
+.owl-carousel .icon-picture {
   background-position: -456px -48px;
 }
-.icon-pencil {
+.owl-carousel .icon-pencil {
   background-position: 0 -72px;
 }
-.icon-map-marker {
+.owl-carousel .icon-map-marker {
   background-position: -24px -72px;
 }
-.icon-adjust {
+.owl-carousel .icon-adjust {
   background-position: -48px -72px;
 }
-.icon-tint {
+.owl-carousel .icon-tint {
   background-position: -72px -72px;
 }
-.icon-edit {
+.owl-carousel .icon-edit {
   background-position: -96px -72px;
 }
-.icon-share {
+.owl-carousel .icon-share {
   background-position: -120px -72px;
 }
-.icon-check {
+.owl-carousel .icon-check {
   background-position: -144px -72px;
 }
-.icon-move {
+.owl-carousel .icon-move {
   background-position: -168px -72px;
 }
-.icon-step-backward {
+.owl-carousel .icon-step-backward {
   background-position: -192px -72px;
 }
-.icon-fast-backward {
+.owl-carousel .icon-fast-backward {
   background-position: -216px -72px;
 }
-.icon-backward {
+.owl-carousel .icon-backward {
   background-position: -240px -72px;
 }
-.icon-play {
+.owl-carousel .icon-play {
   background-position: -264px -72px;
 }
-.icon-pause {
+.owl-carousel .icon-pause {
   background-position: -288px -72px;
 }
-.icon-stop {
+.owl-carousel .icon-stop {
   background-position: -312px -72px;
 }
-.icon-forward {
+.owl-carousel .icon-forward {
   background-position: -336px -72px;
 }
-.icon-fast-forward {
+.owl-carousel .icon-fast-forward {
   background-position: -360px -72px;
 }
-.icon-step-forward {
+.owl-carousel .icon-step-forward {
   background-position: -384px -72px;
 }
-.icon-eject {
+.owl-carousel .icon-eject {
   background-position: -408px -72px;
 }
-.icon-chevron-left {
+.owl-carousel .icon-chevron-left {
   background-position: -432px -72px;
 }
-.icon-chevron-right {
+.owl-carousel .icon-chevron-right {
   background-position: -456px -72px;
 }
-.icon-plus-sign {
+.owl-carousel .icon-plus-sign {
   background-position: 0 -96px;
 }
-.icon-minus-sign {
+.owl-carousel .icon-minus-sign {
   background-position: -24px -96px;
 }
-.icon-remove-sign {
+.owl-carousel .icon-remove-sign {
   background-position: -48px -96px;
 }
-.icon-ok-sign {
+.owl-carousel .icon-ok-sign {
   background-position: -72px -96px;
 }
-.icon-question-sign {
+.owl-carousel .icon-question-sign {
   background-position: -96px -96px;
 }
-.icon-info-sign {
+.owl-carousel .icon-info-sign {
   background-position: -120px -96px;
 }
-.icon-screenshot {
+.owl-carousel .icon-screenshot {
   background-position: -144px -96px;
 }
-.icon-remove-circle {
+.owl-carousel .icon-remove-circle {
   background-position: -168px -96px;
 }
-.icon-ok-circle {
+.owl-carousel .icon-ok-circle {
   background-position: -192px -96px;
 }
-.icon-ban-circle {
+.owl-carousel .icon-ban-circle {
   background-position: -216px -96px;
 }
-.icon-arrow-left {
+.owl-carousel .icon-arrow-left {
   background-position: -240px -96px;
 }
-.icon-arrow-right {
+.owl-carousel .icon-arrow-right {
   background-position: -264px -96px;
 }
-.icon-arrow-up {
+.owl-carousel .icon-arrow-up {
   background-position: -289px -96px;
 }
-.icon-arrow-down {
+.owl-carousel .icon-arrow-down {
   background-position: -312px -96px;
 }
-.icon-share-alt {
+.owl-carousel .icon-share-alt {
   background-position: -336px -96px;
 }
-.icon-resize-full {
+.owl-carousel .icon-resize-full {
   background-position: -360px -96px;
 }
-.icon-resize-small {
+.owl-carousel .icon-resize-small {
   background-position: -384px -96px;
 }
-.icon-plus {
+.owl-carousel .icon-plus {
   background-position: -408px -96px;
 }
-.icon-minus {
+.owl-carousel .icon-minus {
   background-position: -433px -96px;
 }
-.icon-asterisk {
+.owl-carousel .icon-asterisk {
   background-position: -456px -96px;
 }
-.icon-exclamation-sign {
+.owl-carousel .icon-exclamation-sign {
   background-position: 0 -120px;
 }
-.icon-gift {
+.owl-carousel .icon-gift {
   background-position: -24px -120px;
 }
-.icon-leaf {
+.owl-carousel .icon-leaf {
   background-position: -48px -120px;
 }
-.icon-fire {
+.owl-carousel .icon-fire {
   background-position: -72px -120px;
 }
-.icon-eye-open {
+.owl-carousel .icon-eye-open {
   background-position: -96px -120px;
 }
-.icon-eye-close {
+.owl-carousel .icon-eye-close {
   background-position: -120px -120px;
 }
-.icon-warning-sign {
+.owl-carousel .icon-warning-sign {
   background-position: -144px -120px;
 }
-.icon-plane {
+.owl-carousel .icon-plane {
   background-position: -168px -120px;
 }
-.icon-calendar {
+.owl-carousel .icon-calendar {
   background-position: -192px -120px;
 }
-.icon-random {
+.owl-carousel .icon-random {
   background-position: -216px -120px;
   width: 16px;
 }
-.icon-comment {
+.owl-carousel .icon-comment {
   background-position: -240px -120px;
 }
-.icon-magnet {
+.owl-carousel .icon-magnet {
   background-position: -264px -120px;
 }
-.icon-chevron-up {
+.owl-carousel .icon-chevron-up {
   background-position: -288px -120px;
 }
-.icon-chevron-down {
+.owl-carousel .icon-chevron-down {
   background-position: -313px -119px;
 }
-.icon-retweet {
+.owl-carousel .icon-retweet {
   background-position: -336px -120px;
 }
-.icon-shopping-cart {
+.owl-carousel .icon-shopping-cart {
   background-position: -360px -120px;
 }
-.icon-folder-close {
+.owl-carousel .icon-folder-close {
   background-position: -384px -120px;
   width: 16px;
 }
-.icon-folder-open {
+.owl-carousel .icon-folder-open {
   background-position: -408px -120px;
   width: 16px;
 }
-.icon-resize-vertical {
+.owl-carousel .icon-resize-vertical {
   background-position: -432px -119px;
 }
-.icon-resize-horizontal {
+.owl-carousel .icon-resize-horizontal {
   background-position: -456px -118px;
 }
-.icon-hdd {
+.owl-carousel .icon-hdd {
   background-position: 0 -144px;
 }
-.icon-bullhorn {
+.owl-carousel .icon-bullhorn {
   background-position: -24px -144px;
 }
-.icon-bell {
+.owl-carousel .icon-bell {
   background-position: -48px -144px;
 }
-.icon-certificate {
+.owl-carousel .icon-certificate {
   background-position: -72px -144px;
 }
-.icon-thumbs-up {
+.owl-carousel .icon-thumbs-up {
   background-position: -96px -144px;
 }
-.icon-thumbs-down {
+.owl-carousel .icon-thumbs-down {
   background-position: -120px -144px;
 }
-.icon-hand-right {
+.owl-carousel .icon-hand-right {
   background-position: -144px -144px;
 }
-.icon-hand-left {
+.owl-carousel .icon-hand-left {
   background-position: -168px -144px;
 }
-.icon-hand-up {
+.owl-carousel .icon-hand-up {
   background-position: -192px -144px;
 }
-.icon-hand-down {
+.owl-carousel .icon-hand-down {
   background-position: -216px -144px;
 }
-.icon-circle-arrow-right {
+.owl-carousel .icon-circle-arrow-right {
   background-position: -240px -144px;
 }
-.icon-circle-arrow-left {
+.owl-carousel .icon-circle-arrow-left {
   background-position: -264px -144px;
 }
-.icon-circle-arrow-up {
+.owl-carousel .icon-circle-arrow-up {
   background-position: -288px -144px;
 }
-.icon-circle-arrow-down {
+.owl-carousel .icon-circle-arrow-down {
   background-position: -312px -144px;
 }
-.icon-globe {
+.owl-carousel .icon-globe {
   background-position: -336px -144px;
 }
-.icon-wrench {
+.owl-carousel .icon-wrench {
   background-position: -360px -144px;
 }
-.icon-tasks {
+.owl-carousel .icon-tasks {
   background-position: -384px -144px;
 }
-.icon-filter {
+.owl-carousel .icon-filter {
   background-position: -408px -144px;
 }
-.icon-briefcase {
+.owl-carousel .icon-briefcase {
   background-position: -432px -144px;
 }
-.icon-fullscreen {
+.owl-carousel .icon-fullscreen {
   background-position: -456px -144px;
 }
