@@ -67,6 +67,7 @@
       mouseDrag:              <f:format.raw value="{settings.mouseDrag}" />,
       touchDrag:              <f:format.raw value="{settings.touchDrag}" />,
       addClassActive:         <f:format.raw value="{settings.addClassActive}" />,
+      beforeInit:             <f:format.raw value="{settings.random}" /> ? random(sync1) : '',
       transitionStyle:        <f:format.raw value="{settings.transitionStyle}" />,
       afterAction:            syncPosition,
       responsiveRefreshRate:  <f:format.raw value="{settings.responsiveRefreshRate}" />,
@@ -106,9 +107,19 @@
       mouseDrag:              <f:format.raw value="{settings.mouseDrag}" />,
       touchDrag:              <f:format.raw value="{settings.touchDrag}" />,
       addClassActive:         <f:format.raw value="{settings.addClassActive}" />,
+      beforeInit:             <f:format.raw value="{settings.random}" /> ? random(sync2) : '',
       transitionStyle:        false,
       afterInit:              function(el) { el.find('.owl-item').eq(0).addClass('synced'); }
     });
+
+    //Sort random function
+    function random(owlSelector){
+      owlSelector.children().sort(function(){
+        return Math.round(Math.random()) - 0.5;
+      }).each(function(){
+        $(this).appendTo(owlSelector);
+      });
+    }
 
     function syncPosition(el) {
       var current = this.currentItem;

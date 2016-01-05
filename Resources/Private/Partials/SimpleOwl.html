@@ -28,7 +28,9 @@
 
 <owl:addJsFooterInlineCode name="owlslider_{settings.slider_id}">
   jQuery(document).ready(function() {
+
     var slider = jQuery('{settings.slider_id}' ? '#owlslider_{settings.slider_id}' : '#owlslider');
+
     slider.owlCarousel({
       items:                  <f:format.raw value="{settings.items}" />,
       itemsDesktop:           <f:format.raw value="{settings.itemsDesktop}" />,
@@ -64,16 +66,27 @@
       touchDrag:              <f:format.raw value="{settings.touchDrag}" />,
       addClassActive:         <f:format.raw value="{settings.addClassActive}" />,
       transitionStyle:        <f:format.raw value="{settings.transitionStyle}" />,
+      beforeInit:             <f:format.raw value="{settings.random}" /> ? random(slider) : ''
     });
-
+  
     // Custom Navigation
     jQuery('{settings.slider_id}' ? '.customNavigation_{settings.slider_id} .next' : '.customNavigation .next')
       .click(function() {
         slider.trigger('owl.next');
       });
+
     jQuery('{settings.slider_id}' ? '.customNavigation_{settings.slider_id} .prev' : '.customNavigation .prev')
       .click(function() {
         slider.trigger('owl.prev');
       });
+
+    //Sort random function
+    function random(owlSelector){
+      owlSelector.children().sort(function(){
+          return Math.round(Math.random()) - 0.5;
+        }).each(function(){
+          $(this).appendTo(owlSelector);
+      });
+    }
   });
 </owl:addJsFooterInlineCode>

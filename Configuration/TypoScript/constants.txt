@@ -92,5 +92,7 @@ plugin.tx_owlslider {
     transitionstyle = false
     # cat=plugin.tx_owlslider/slider/035; type=options[true,false]; label=customNavigation: displays a custom navigation beyond the slider if true. Set false by default.
     customNavigation = false
+    # cat=plugin.tx_owlslider/slider/035; type=options[true,false]; label=Randomize: randomizes the order of images.
+    random = false
   }
 }

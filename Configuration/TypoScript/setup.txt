@@ -51,6 +51,7 @@ plugin.tx_owlslider {
     touchDrag = {$plugin.tx_owlslider.configuration.touchdrag}
     addClassActive = {$plugin.tx_owlslider.configuration.addclassactive}
     transitionStyle = {$plugin.tx_owlslider.configuration.transitionstyle}
+    random = {$plugin.tx_owlslider.configuration.random}
   }
 }
 
