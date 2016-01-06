@@ -62,4 +62,6 @@ $TCA['tx_owlslider_domain_model_item'] = array(
     )
 );
 
+include_once(\TYPO3\CMS\Core\Utility\ExtensionManagementUtility::extPath($_EXTKEY) . 'Classes/PHP/tx_owlslider_addFieldsToFlexForm.php');
+
 ?>

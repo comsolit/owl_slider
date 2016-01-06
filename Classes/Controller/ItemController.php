@@ -49,8 +49,59 @@ class ItemController extends \TYPO3\CMS\Extbase\Mvc\Controller\ActionController
      */
     public function listAction()
     {
+        $settings = $this->settings;
+
+        $customConfigName = $this->getCustomConfigName($settings);
+        $customConfigArray = $this->getCustomConfigArray($customConfigName, $settings);
+        $customSettings = $this->applyCustomConfig($settings, $customConfigArray);
+
         $items = $this->itemRepository->findAll();
+        if(!empty($customSettings)) {
+            $this->view->assign('settings', $customSettings);
+        }
         $this->view->assign('items', $items);
+    }
+
+    /**
+     * get the custom config name
+     *
+     * @param $settings
+     * @return returns custom config name
+     */
+    public function getCustomConfigName($settings)
+    {
+        if(isset($settings['config']) && $settings['config'] != '') {
+            return $settings['config'];
+        }
+
+    }
+
+    /**
+     * get the custom config array
+     *
+     * @param $customConfigName, $settings
+     * @return returns custom config array
+     */
+    public function getCustomConfigArray($customConfigName, $settings)
+    {
+        $customSettings = $settings['predef'][$customConfigName];
+
+        if(isset($customSettings) && is_array($customSettings)) {
+            $customConfigArray = $customSettings['settings'];
+            return $customConfigArray;
+        }
+    }
+
+    /**
+     * apply custom config values
+     *
+     * @param $settings, $customConfigArray
+     * @return returns settings with custom values applied
+     */
+    public function applyCustomConfig($settings, $customConfigArray)
+    {
+        $customSettings = array_replace($settings,$customConfigArray);
+        return $customSettings;
     }
 
     /**

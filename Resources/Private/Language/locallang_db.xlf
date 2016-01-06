@@ -24,6 +24,12 @@
       <trans-unit id="tx_owlslider_domain_model_item.slideroptions">
         <source>Slider Options</source>
       </trans-unit>
+      <trans-unit id="tx_owlslider_domain_model_item.please_select">
+        <source>Choose a custom setting</source>
+      </trans-unit>
+      <trans-unit id="tx_owlslider_domain_model_item.no_settings">
+        <source>No custom settings found</source>
+      </trans-unit>
     </body>
   </file>
 </xliff>

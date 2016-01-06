@@ -36,6 +36,15 @@
               </config>
             </TCEforms>
           </settings.slider_id>
+          <settings.config>
+            <TCEforms>
+              <label>Custom settings</label>
+              <config>
+                <type>select</type>
+                <itemsProcFunc>tx_owlslider_addFieldsToFlexForm->addFields</itemsProcFunc>
+              </config>
+            </TCEforms>
+          </settings.config>
         </el>
       </ROOT>
     </sDEF>
