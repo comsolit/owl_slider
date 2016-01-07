@@ -30,9 +30,29 @@
 </div>
 
 <owl:addJsFooterInlineCode name="owlslider_{settings.slider_id}">
+
+  window.onload = function() {
+    var sliderId = '{settings.slider_id}';
+    var anchorElements =
+    document
+      .getElementById(sliderId ? 'sync2_' + sliderId : 'sync2')
+      .getElementsByTagName('a');
+
+    for (var i in anchorElements) {
+      anchorElements[i].onclick = function() {
+        if(this.target === '') {
+          window.open(this.href, '_self', false);
+        } else {
+          window.open(this.href, this.target);
+        }
+      }
+    }
+  }
+
   jQuery(document).ready(function() {
-    var sync1 = '{settings.slider_id}' ? jQuery('#sync1_{settings.slider_id}') : jQuery('#sync1');
-    var sync2 = '{settings.slider_id}' ? jQuery('#sync2_{settings.slider_id}') : jQuery('#sync2');
+    var sliderId = '{settings.slider_id}';
+    var sync1 = sliderId ? jQuery('#sync1_' + sliderId) : jQuery('#sync1');
+    var sync2 = sliderId ? jQuery('#sync2_' + sliderId) : jQuery('#sync2');
 
     sync1.owlCarousel({
       items:                  1,
@@ -43,31 +63,7 @@
       itemsMobile:            false,
       itemsCustom:            false,
       singleItem:             true,
-      itemsScaleUp:           <f:format.raw value="{settings.itemsScaleUp}" />,
-      slideSpeed:             <f:format.raw value="{settings.slideSpeed}" />,
-      paginationSpeed:        <f:format.raw value="{settings.paginationSpeed}" />,
-      rewindSpeed:            <f:format.raw value="{settings.rewindSpeed}" />,
-      autoPlay:               <f:format.raw value="{settings.autoPlay}" />,
-      stopOnHover:            <f:format.raw value="{settings.stopOnHover}" />,
-      navigation:             <f:format.raw value="{settings.navigation}" />,
-      navigationText:         <f:format.raw value="{settings.navigationText}" />,
-      rewindNav:              <f:format.raw value="{settings.rewindNav}" />,
-      scrollPerPage:          <f:format.raw value="{settings.scrollPerPage}" />,
-      pagination:             <f:format.raw value="{settings.pagination}" />,
-      paginationNumbers:      <f:format.raw value="{settings.paginationNumbers}" />,
-      responsive:             <f:format.raw value="{settings.responsive}" />,
-      responsiveBaseWidth:    <f:format.raw value="{settings.responsiveBaseWidth}" />,
-      baseClass:              <f:format.raw value="{settings.baseClass}" />,
-      theme:                  <f:format.raw value="{settings.theme}" />,
-      lazyLoad:               <f:format.raw value="{settings.lazyLoad}" />,
-      lazyFollow:             <f:format.raw value="{settings.lazyFollow}" />,
-      lazyEffect:             <f:format.raw value="{settings.lazyEffect}" />,
-      autoHeight:             <f:format.raw value="{settings.autoHeight}" />,
-      dragBeforeAnimFinish:   <f:format.raw value="{settings.dragBeforeAnimFinish}" />,
-      mouseDrag:              <f:format.raw value="{settings.mouseDrag}" />,
-      touchDrag:              <f:format.raw value="{settings.touchDrag}" />,
-      addClassActive:         <f:format.raw value="{settings.addClassActive}" />,
-      beforeInit:             <f:format.raw value="{settings.random}" /> ? random(sync1) : '',
+      <f:render partial="owlCarouselObjectPart" arguments="{settings}"/>
       transitionStyle:        <f:format.raw value="{settings.transitionStyle}" />,
       afterAction:            syncPosition,
       responsiveRefreshRate:  <f:format.raw value="{settings.responsiveRefreshRate}" />,
@@ -82,31 +78,7 @@
       itemsMobile:            <f:format.raw value="{settings.itemsMobile}" />,
       itemsCustom:            <f:format.raw value="{settings.itemsCustom}" />,
       singleItem:             <f:format.raw value="{settings.singleItem}" />,
-      itemsScaleUp:           <f:format.raw value="{settings.itemsScaleUp}" />,
-      slideSpeed:             <f:format.raw value="{settings.slideSpeed}" />,
-      paginationSpeed:        <f:format.raw value="{settings.paginationSpeed}" />,
-      rewindSpeed:            <f:format.raw value="{settings.rewindSpeed}" />,
-      autoPlay:               <f:format.raw value="{settings.autoPlay}" />,
-      stopOnHover:            <f:format.raw value="{settings.stopOnHover}" />,
-      navigation:             <f:format.raw value="{settings.navigation}" />,
-      navigationText:         <f:format.raw value="{settings.navigationText}" />,
-      rewindNav:              <f:format.raw value="{settings.rewindNav}" />,
-      scrollPerPage:          <f:format.raw value="{settings.scrollPerPage}" />,
-      pagination:             <f:format.raw value="{settings.pagination}" />,
-      paginationNumbers:      <f:format.raw value="{settings.paginationNumbers}" />,
-      responsive:             <f:format.raw value="{settings.responsive}" />,
-      responsiveRefreshRate:  <f:format.raw value="{settings.responsiveRefreshRate}" />,
-      responsiveBaseWidth:    <f:format.raw value="{settings.responsiveBaseWidth}" />,
-      baseClass:              <f:format.raw value="{settings.baseClass}" />,
-      theme:                  <f:format.raw value="{settings.theme}" />,
-      lazyLoad:               <f:format.raw value="{settings.lazyLoad}" />,
-      lazyFollow:             <f:format.raw value="{settings.lazyFollow}" />,
-      lazyEffect:             <f:format.raw value="{settings.lazyEffect}" />,
-      autoHeight:             <f:format.raw value="{settings.autoHeight}" />,
-      dragBeforeAnimFinish:   <f:format.raw value="{settings.dragBeforeAnimFinish}" />,
-      mouseDrag:              <f:format.raw value="{settings.mouseDrag}" />,
-      touchDrag:              <f:format.raw value="{settings.touchDrag}" />,
-      addClassActive:         <f:format.raw value="{settings.addClassActive}" />,
+      <f:render partial="owlCarouselObjectPart" arguments="{settings}"/>
       beforeInit:             <f:format.raw value="{settings.random}" /> ? random(sync2) : '',
       transitionStyle:        false,
       afterInit:              function(el) { el.find('.owl-item').eq(0).addClass('synced'); }
@@ -165,21 +137,4 @@
       }
     }
   });
-
-  window.onload = function() {
-    var anchorElements =
-      document
-        .getElementById('{settings.slider_id}' ? 'sync2_{settings.slider_id}' : 'sync2')
-        .getElementsByTagName('a');
-
-    for (var i in anchorElements) {
-      anchorElements[i].onclick = function() {
-        if(this.target === '') {
-          window.open(this.href, '_self', false);
-        } else {
-          window.open(this.href, this.target);
-        }
-      }
-    }
-  }
 </owl:addJsFooterInlineCode>
