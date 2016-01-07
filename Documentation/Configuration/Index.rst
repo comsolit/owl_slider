@@ -67,6 +67,7 @@ mouseDrag	   	    Turn off/on mouse events.						  option
 touchDrag    		    Turn off/on touch events.					 	  option
 addClassActive		    Add "active" classes on visible items. 				  option
 transitionStyle		    Add CSS3 transition style.						  string
+random		    randomizes the order of images.						  true/false
 customNavigation	    Displays a custom navigation beyond the slider if true. 		  option
 ========================== ====================================================================== ============
 

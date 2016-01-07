@@ -17,14 +17,14 @@
 Custom settings for each slider on page
 ==============================
 
-You can upload more than one slider on one page and add different settings
+You could add more than one slider on the same page and add different settings to
 to each slider.
 To to that, you need to write a TypoScript with this settings.
 
-We give you an expample of TypoScript configuration:
+We give you an example of TypoScript configuration:
 
-:typoscript:`plugin.tx_owlslider.settings.predef.test {
-        name = test
+:typoscript:`plugin.tx_owlslider.settings.predef.example {
+        name = Example
         settings {
             items = 2
             random = true
@@ -45,4 +45,4 @@ you will be able to choose the settings in the plugin configuration in Typo3 bac
 .. image:: ../../Images/Choose_Custom_Settings.png
 
 
-Now just save your changes and your custom settings should apply for this slider
+Now just save your changes and your custom settings should apply for this slider.

@@ -15,3 +15,4 @@ This chapter gives you information about the basic functions of the extension "*
 	Modus/Index
 	Customnavigation/Index
 	Multiple/Index
+	CustomSettings/Index
