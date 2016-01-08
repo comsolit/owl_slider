@@ -54,5 +54,8 @@ ChangeLog
 | 2.3.0          | Feature: random slides                                                          |
 |                | Feature: custom setting for every sliderplugin at the page (via TS)             |
 +----------------+---------------------------------------------------------------------------------+
+| 2.3.1          | exclude JS from concatination                                                   |
+|                | Fix broken TypoScript example in documentation                                  |
++----------------+---------------------------------------------------------------------------------+
 
 
