@@ -54,7 +54,6 @@ class ItemController extends \TYPO3\CMS\Extbase\Mvc\Controller\ActionController
         $customConfigName = $this->getCustomConfigName($settings);
         $customConfigArray = $this->getCustomConfigArray($customConfigName, $settings);
         $customSettings = $this->applyCustomConfig($settings, $customConfigArray);
-
         $items = $this->itemRepository->findAll();
         if(!empty($customSettings)) {
             $this->view->assign('settings', $customSettings);
@@ -85,7 +84,6 @@ class ItemController extends \TYPO3\CMS\Extbase\Mvc\Controller\ActionController
     public function getCustomConfigArray($customConfigName, $settings)
     {
         $customSettings = $settings['predef'][$customConfigName];
-
         if(isset($customSettings) && is_array($customSettings)) {
             $customConfigArray = $customSettings['settings'];
             return $customConfigArray;
@@ -98,7 +96,7 @@ class ItemController extends \TYPO3\CMS\Extbase\Mvc\Controller\ActionController
      * @param $settings, $customConfigArray
      * @return returns settings with custom values applied
      */
-    public function applyCustomConfig($settings, $customConfigArray)
+    public function applyCustomConfig($settings, $customConfigArray = [])
     {
         $customSettings = array_replace($settings,$customConfigArray);
         return $customSettings;
