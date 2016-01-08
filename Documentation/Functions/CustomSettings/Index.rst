@@ -25,6 +25,7 @@ We give you an example of TypoScript configuration:
 
 :typoscript:`plugin.tx_owlslider.settings.predef.example {
         name = Example
+
         settings {
             items = 2
             random = true
