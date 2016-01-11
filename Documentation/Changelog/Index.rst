@@ -57,5 +57,7 @@ ChangeLog
 | 2.3.1          | exclude JS from concatination                                                   |
 |                | Fix broken TypoScript example in documentation                                  |
 +----------------+---------------------------------------------------------------------------------+
+| 2.3.2          | Fix missing annotation and declate array                                        |
++----------------+---------------------------------------------------------------------------------+
 
 
