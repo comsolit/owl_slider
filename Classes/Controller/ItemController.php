@@ -50,7 +50,7 @@ class ItemController extends \TYPO3\CMS\Extbase\Mvc\Controller\ActionController
     public function listAction()
     {
         $settings = $this->settings;
-
+        $customConfigArray = array();
         $customConfigName = $this->getCustomConfigName($settings);
         $customConfigArray = $this->getCustomConfigArray($customConfigName, $settings);
         $customSettings = $this->applyCustomConfig($settings, $customConfigArray);
@@ -96,7 +96,7 @@ class ItemController extends \TYPO3\CMS\Extbase\Mvc\Controller\ActionController
      * @param $settings, $customConfigArray
      * @return returns settings with custom values applied
      */
-    public function applyCustomConfig($settings, $customConfigArray = [])
+    public function applyCustomConfig($settings, $customConfigArray)
     {
         $customSettings = array_replace($settings,$customConfigArray);
         return $customSettings;

@@ -24,6 +24,7 @@ class AddJsFooterInlineCodeViewHelper extends \TYPO3\CMS\Fluid\Core\ViewHelper\A
      * @param string $name
      * @param string $compress
      * @param string $forceOnTop
+     * @param string $excludeFromConcatenation
      * @return NULL
      */
     public function render($name, $compress = FALSE, $forceOnTop = FALSE, $excludeFromConcatenation = TRUE)
