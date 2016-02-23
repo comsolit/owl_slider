@@ -52,6 +52,19 @@ plugin.tx_owlslider {
     addClassActive = {$plugin.tx_owlslider.configuration.addclassactive}
     transitionStyle = {$plugin.tx_owlslider.configuration.transitionstyle}
     random = {$plugin.tx_owlslider.configuration.random}
+
+    predef {
+
+        example {
+        name = customexample
+        settings {
+          singleItem = false
+          items = 4
+          random = true
+          slideHeight = 100
+        }
+      }
+    }
   }
 }
 
