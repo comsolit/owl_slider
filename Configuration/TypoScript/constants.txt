@@ -94,5 +94,7 @@ plugin.tx_owlslider {
     customNavigation = false
     # cat=plugin.tx_owlslider/slider/035; type=options[true,false]; label=Randomize: randomizes the order of images.
     random = false
+    # cat=plugin.tx_owlslider/slider/036; type=string; label=Height of the Slider Item in Pixel
+    slideHeight = 360
   }
 }
