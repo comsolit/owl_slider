@@ -1,6 +1,6 @@
 <?php
 
-namespace TYPO3\OwlSlider\ViewHelpers;
+namespace Comsolit\OwlSlider\ViewHelpers;
 
 class TypolinkViewHelper extends \TYPO3\CMS\Fluid\Core\ViewHelper\AbstractViewHelper
 {

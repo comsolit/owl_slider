@@ -1,6 +1,6 @@
 <?php
 
-namespace TYPO3\OwlSlider\Domain\Repository;
+namespace Comsolit\OwlSlider\Domain\Repository;
 
 /***************************************************************
  * Copyright notice

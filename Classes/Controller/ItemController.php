@@ -1,6 +1,6 @@
 <?php
 
-namespace TYPO3\OwlSlider\Controller;
+namespace Comsolit\OwlSlider\Controller;
 
 /***************************************************************
  * Copyright notice
@@ -37,7 +37,7 @@ class ItemController extends \TYPO3\CMS\Extbase\Mvc\Controller\ActionController
     /**
      * itemRepository
      *
-     * @var \TYPO3\OwlSlider\Domain\Repository\ItemRepository
+     * @var \Comsolit\OwlSlider\Domain\Repository\ItemRepository
      * @inject
      */
     protected $itemRepository;
@@ -105,10 +105,10 @@ class ItemController extends \TYPO3\CMS\Extbase\Mvc\Controller\ActionController
     /**
      * action show
      *
-     * @param \TYPO3\OwlSlider\Domain\Model\Item $item
+     * @param \Comsolit\OwlSlider\Domain\Model\Item $item
      * @return void
      */
-    public function showAction(\TYPO3\OwlSlider\Domain\Model\Item $item)
+    public function showAction(\Comsolit\OwlSlider\Domain\Model\Item $item)
     {
         $this->view->assign('item', $item);
     }

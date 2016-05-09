@@ -1,6 +1,6 @@
 <?php
 
-namespace TYPO3\OwlSlider\Tests;
+namespace Comsolit\OwlSlider\Tests;
 
 /***************************************************************
  * Copyright notice
@@ -49,7 +49,7 @@ class ItemControllerTest extends \TYPO3\CMS\Extbase\Tests\Unit\BaseTestCase
 
     public function setUp()
     {
-        $this->fixture = new \TYPO3\OwlSlider\Domain\Model\Item();
+        $this->fixture = new \Comsolit\OwlSlider\Domain\Model\Item();
     }
 
     public function tearDown()

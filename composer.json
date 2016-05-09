@@ -19,7 +19,7 @@
   },
   "autoload": {
     "psr-4": {
-      "TYPO3\\OwlSlider\\": "Classes/"
+      "Comsolit\\OwlSlider\\": "Classes/"
     }
   },
   "authors": [
