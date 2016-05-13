@@ -24,7 +24,7 @@ To to that, you need to write a TypoScript with this settings.
 We give you an example of TypoScript configuration:
 
 :typoscript:`plugin.tx_owlslider.settings.predef.example {
-        name = Example
+        name = example
 
         settings {
             items = 2
@@ -32,6 +32,11 @@ We give you an example of TypoScript configuration:
             navigation = true
         }
     }`
+
+IMPORTANT!!
+name must be exact the string of predef
+    predef.example
+    name = example
 
 You can locate this TypoScript file wherever you want.
 At least it's important to include this script in your setup.ts of your project,

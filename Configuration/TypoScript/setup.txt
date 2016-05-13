@@ -56,7 +56,7 @@ plugin.tx_owlslider {
     predef {
 
         example {
-        name = customexample
+        name = example
         settings {
           singleItem = false
           items = 4
