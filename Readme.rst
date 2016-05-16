@@ -12,4 +12,4 @@ Responsive carousel slider for TYPO3, Touch enabled based on the jQuery OWL Caro
 * random slides
 
 Extension Documentation
-<https://docs.typo3.org/typo3cms/extensions/comsolit_suggest/>
+<https://docs.typo3.org/typo3cms/extensions/owl_slider/>
