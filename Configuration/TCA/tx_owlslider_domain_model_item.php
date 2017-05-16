@@ -1,10 +1,31 @@
 <?php
-if (! defined('TYPO3_MODE')) {
-    die('Access denied.');
-}
 
-$TCA['tx_owlslider_domain_model_item'] = array(
-    'ctrl' => $TCA['tx_owlslider_domain_model_item']['ctrl'],
+return array(
+    'ctrl' => array(
+        'title' => 'LLL:EXT:owl_slider/Resources/Private/Language/locallang_db.xlf:tx_owlslider_domain_model_item',
+        'label' => 'itemname',
+        'tstamp' => 'tstamp',
+        'crdate' => 'crdate',
+        'cruser_id' => 'cruser_id',
+        'dividers2tabs' => TRUE,
+        'sortby' => 'sorting',
+        'versioningWS' => 2,
+        'versioning_followPages' => TRUE,
+        'origUid' => 't3_origuid',
+        'languageField' => 'sys_language_uid',
+        'transOrigPointerField' => 'l10n_parent',
+        'transOrigDiffSourceField' => 'l10n_diffsource',
+        'delete' => 'deleted',
+        'enablecolumns' => array(
+            'disabled' => 'hidden',
+            'starttime' => 'starttime',
+            'endtime' => 'endtime'
+        ),
+        'searchFields' => 'itemname,itemimage,itemlink,',
+        'iconfile' => \TYPO3\CMS\Core\Utility\GeneralUtility::compat_version('7.5')
+            ? 'EXT:owl_slider/Resources/Public/Icons/tx_owlslider_domain_model_item.png'
+            : \TYPO3\CMS\Core\Utility\ExtensionManagementUtility::extRelPath($_EXTKEY) . 'Resources/Public/Icons/tx_owlslider_domain_model_item.png'
+    ),
     'interface' => array(
         'showRecordFieldList' => 'sys_language_uid, l10n_parent, l10n_diffsource, hidden, itemname, itemimage, itemlink, itemcontent'
     ),
@@ -187,5 +208,3 @@ $TCA['tx_owlslider_domain_model_item'] = array(
         )
     )
 );
-
-?>
