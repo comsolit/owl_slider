@@ -6,17 +6,21 @@
       <f:if condition="{item.itemimage}">
         <f:if condition="{item.itemlink}">
           <f:then>
-            <owl:typolink parameter="{item.itemlink}">
-              <f:image class="lazyOwl" src="uploads/tx_owlslider/{item.itemimage}" height="{settings.slideHeight}" alt="{item.itemname}" />
-            </owl:typolink>
+            <f:format.raw>
+              <owl:typolink parameter="{item.itemlink}">
+                <f:image class="lazyOwl" src="uploads/tx_owlslider/{item.itemimage}" height="{settings.slideHeight}" alt="{item.itemname}"/>
+              </owl:typolink>
+            </f:format.raw>
           </f:then>
           <f:else>
-            <f:image class="lazyOwl" src="uploads/tx_owlslider/{item.itemimage}" height="{settings.slideHeight}" alt="{item.itemname}" />
+            <f:image class="lazyOwl" src="uploads/tx_owlslider/{item.itemimage}" height="{settings.slideHeight}" alt="{item.itemname}"/>
           </f:else>
         </f:if>
       </f:if>
       <f:if condition="{item.itemcontent}">
-        <div><f:format.html>{item.itemcontent}</f:format.html></div>
+        <div>
+          <f:format.html>{item.itemcontent}</f:format.html>
+        </div>
       </f:if>
     </div>
   </f:for>
