@@ -1,8 +1,7 @@
 {
-  "name": "comsolit/owl_slider",
+  "name": "comsolit/owl-slider",
   "type": "typo3-cms-extension",
   "description": "Responsive Slider Extension",
-  "version": "0.0.2",
   "keywords": [
     "TYPO3",
     "CMS",
@@ -14,7 +13,7 @@
     "comsolit/owl_slider": "self.version"
   },
   "require": {
-    "typo3/cms-core": ">=6.2.0,<7.6.00",
+    "typo3/cms-core": ">=8.7.0",
     "php": ">=5.5.0"
   },
   "autoload": {
