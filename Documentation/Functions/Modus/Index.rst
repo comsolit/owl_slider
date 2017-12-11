@@ -27,7 +27,7 @@ If you want your slider look like something like this
 The each content-element of a slide is synchronized with its slide-element. 
 All content-elements are displayed at once, but each of them if clicked scrolls the slider to the maching slide.
 
-To see how it works and to try it out please visit http://owlgraphic.com/owlcarousel/demos/sync.html
+To see how it works and to try it out please visit http://www.landmarkmlp.com/js-plugin/owl.carousel/
 
 
 In order to make your slider look like “Synced Owls”-version you

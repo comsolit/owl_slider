@@ -45,7 +45,7 @@ Item
 
 
 .. tip::
-   Check http://owlgraphic.com/owlcarousel/ for more demos!
+   Check http://www.landmarkmlp.com/js-plugin/owl.carousel/ for more demos!
 
 
    
