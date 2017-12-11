@@ -120,7 +120,7 @@ class Item extends \TYPO3\CMS\Extbase\DomainObject\AbstractEntity
      * Sets the itemlink
      *
      * @param \string $itemlink
-     * @return \string itemlink
+     * @return void
      */
     public function setItemlink($itemlink)
     {
