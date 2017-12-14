@@ -72,4 +72,5 @@ ChangeLog
 | 2.5.0          | Compatibility for TYPO3 8.7, drop of TYPO3 6.2 Support! - thanks to SicorDev    |
 +----------------+---------------------------------------------------------------------------------+
 | 2.5.1          | fix naming for owlCarouselObjectPart.html partial                               |
+|                | fix broken demo links in documentation, migrate TCA and general cleanup         |
 +----------------+---------------------------------------------------------------------------------+
