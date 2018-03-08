@@ -73,4 +73,5 @@ ChangeLog
 +----------------+---------------------------------------------------------------------------------+
 | 2.5.1          | fix naming for owlCarouselObjectPart.html partial                               |
 |                | fix broken demo links in documentation, migrate TCA and general cleanup         |
+|                | fix problem with missing plugin form fields (Flexform)                          |
 +----------------+---------------------------------------------------------------------------------+
