@@ -77,3 +77,6 @@ ChangeLog
 | 2.5.2          | Fix problem with missing plugin form fields (Flexform) (Thanks to @sebkln)      |
 |                | Fix language SQL error when no selection is given                               |
 +----------------+---------------------------------------------------------------------------------+
+| 2.5.3          | Fix renderType error (starttime and endtime field)                              |
+|                | Fix missing Text on Access Tab for TYPO3 8.7                                    |
++----------------+---------------------------------------------------------------------------------+
