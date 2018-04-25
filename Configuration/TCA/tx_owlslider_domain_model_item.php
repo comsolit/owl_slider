@@ -30,7 +30,7 @@ return array(
     ),
     'types' => array(
         '1' => array(
-            'showitem' => 'sys_language_uid, l10n_parent, l10n_diffsource, hidden, itemname, itemimage, itemlink, itemcontent, column_offset,--div--;LLL:EXT:cms/locallang_ttc.xlf:tabs.access,starttime, endtime',
+            'showitem' => 'sys_language_uid, l10n_parent, l10n_diffsource, hidden, itemname, itemimage, itemlink, itemcontent, column_offset,--div--;LLL:EXT:frontend/Resources/Private/Language/locallang_ttc.xlf:tabs.access,starttime, endtime',
             'columnsOverrides' => array(
                 'itemcontent' => array(
                     'defaultExtras' => 'richtext:rte_transform[mode=ts_css]'
