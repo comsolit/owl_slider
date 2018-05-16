@@ -80,3 +80,6 @@ ChangeLog
 | 2.5.3          | Fix renderType error (starttime and endtime field)                              |
 |                | Fix missing Text on Access Tab for TYPO3 8.7                                    |
 +----------------+---------------------------------------------------------------------------------+
+| 2.5.4          | Fix missing default language                                                    |
+|                | Fix error for translation selection                                             |
++----------------+---------------------------------------------------------------------------------+
