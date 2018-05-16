@@ -49,16 +49,16 @@ return array(
             'label' => 'LLL:EXT:lang/locallang_general.xlf:LGL.language',
             'config' => array(
                 'type' => 'select',
-                'default' => -1,
-                'renderType' => 'selectSingleBox',
-                'foreign_table' => 'sys_language',
-                'foreign_table_where' => 'ORDER BY sys_language.title',
-                'items' => array(
-                    array(
-                        'LLL:EXT:lang/locallang_general.xlf:LGL.allLanguages',
-                        -1
-                    ),
-                )
+                'default' => 0,
+                'renderType' => 'selectSingle',
+                'special' => 'languages',
+                'items' => [
+                    [
+                      'LLL:EXT:lang/locallang_general.xlf:LGL.allLanguages',
+                       -1,
+                      'flags-multiple'
+                    ],
+                ],
             )
         ),
         'l10n_parent' => array(
