@@ -65,18 +65,17 @@ return array(
             'displayCond' => 'FIELD:sys_language_uid:>:0',
             'exclude' => 1,
             'label' => 'LLL:EXT:lang/locallang_general.xlf:LGL.l18n_parent',
-            'config' => array(
+            'config' => [
                 'type' => 'select',
-                'renderType' => 'selectSingleBox',
-                'items' => array(
-                    array(
-                        '',
-                        0
-                    )
-                ),
+                'renderType' => 'selectSingle',
+                'items' => [
+                    ['', 0],
+                ],
                 'foreign_table' => 'tx_owlslider_domain_model_item',
-                'foreign_table_where' => 'AND tx_owlslider_domain_model_item.pid=###CURRENT_PID### AND tx_owlslider_domain_model_item.sys_language_uid IN (-1,0)'
-            )
+                'foreign_table_where' => 'AND tx_owlslider_domain_model_item.pid=###CURRENT_PID### AND tx_owlslider_domain_model_item.sys_language_uid IN (-1,0)',
+                'showIconTable' => false,
+                'default' => 0,
+            ]
         ),
         'l10n_diffsource' => array(
             'config' => array(
