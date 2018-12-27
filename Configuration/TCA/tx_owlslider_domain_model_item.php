@@ -21,9 +21,7 @@ return array(
             'endtime' => 'endtime'
         ),
         'searchFields' => 'itemname,itemimage,itemlink,',
-        'iconfile' => \TYPO3\CMS\Core\Utility\GeneralUtility::compat_version('7.5')
-            ? 'EXT:owl_slider/Resources/Public/Icons/tx_owlslider_domain_model_item.png'
-            : \TYPO3\CMS\Core\Utility\ExtensionManagementUtility::extRelPath($_EXTKEY) . 'Resources/Public/Icons/tx_owlslider_domain_model_item.png'
+        'iconfile' => 'EXT:owl_slider/Resources/Public/Icons/tx_owlslider_domain_model_item.png'
     ),
     'interface' => array(
         'showRecordFieldList' => 'sys_language_uid, l10n_parent, l10n_diffsource, hidden, itemname, itemimage, itemlink, itemcontent'
@@ -102,7 +100,7 @@ return array(
             'label' => 'LLL:EXT:lang/Resources/Private/Language/locallang_general.xlf:LGL.starttime',
             'config' => array(
                 'type' => 'input',
-                'renderType' => \TYPO3\CMS\Core\Utility\GeneralUtility::compat_version('8') ? 'inputDateTime' : '',
+                'renderType' => 'inputDateTime',
                 'size' => 13,
                 'eval' => 'datetime',
                 'checkbox' => 0,
@@ -120,7 +118,7 @@ return array(
             'label' => 'LLL:EXT:lang/Resources/Private/Language/locallang_general.xlf:LGL.endtime',
             'config' => array(
                 'type' => 'input',
-                'renderType' => \TYPO3\CMS\Core\Utility\GeneralUtility::compat_version('8') ? 'inputDateTime' : '',
+                'renderType' => 'inputDateTime',
                 'size' => 13,
                 'eval' => 'datetime',
                 'checkbox' => 0,
@@ -170,9 +168,7 @@ return array(
                     'link' => array(
                         'type' => 'popup',
                         'title' => 'Link',
-                        'icon' => \TYPO3\CMS\Core\Utility\GeneralUtility::compat_version('8.7')
-                                ? 'actions-wizard-link'
-                                : 'link_popup.gif',
+                        'icon' => 'actions-wizard-link',
                         'module' => array(
                             'name' => 'wizard_element_browser',
                             'urlParameters' => array(
@@ -194,9 +190,7 @@ return array(
                 'rows' => '5',
                 'wizards' => array(
                     'RTE' => array(
-                        'icon' => \TYPO3\CMS\Core\Utility\GeneralUtility::compat_version('8.7')
-                            ? 'actions-wizard-rte'
-                            : 'wizard_rte2.gif',
+                        'icon' => 'actions-wizard-rte',
                         'notNewRecords' => 1,
                         'RTEonly' => 1,
                        	'module' => array(
