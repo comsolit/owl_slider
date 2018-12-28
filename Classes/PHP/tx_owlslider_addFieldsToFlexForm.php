@@ -11,12 +11,7 @@ class tx_owlslider_addFieldsToFlexForm
     function addFields ($config) {
         global $LANG;
 
-        // for Typo3 6 pid is held in $config['row']
-        if(\TYPO3\CMS\Core\Utility\GeneralUtility::compat_version('7.5')) {
-            $pid = intval($config['flexParentDatabaseRow']['pid']);
-        } else {
-            $pid = intval($config['row']['pid']);
-        }
+        $pid = intval($config['row']['pid']);
 
         $ts = $this->loadTS($pid);
         $predefTsArray = $ts['plugin.']['tx_owlslider.']['settings.']['predef.'];
