@@ -7,9 +7,9 @@
         <f:if condition="{item.itemlink}">
           <f:then>
             <f:format.raw>
-              <owl:typolink parameter="{item.itemlink}">
+              <f:link.typolink parameter="{item.itemlink}">
                 <f:image class="lazyOwl" src="uploads/tx_owlslider/{item.itemimage}" height="{settings.slideHeight}" alt="{item.itemname}"/>
-              </owl:typolink>
+              </f:link.typolink>
             </f:format.raw>
           </f:then>
           <f:else>

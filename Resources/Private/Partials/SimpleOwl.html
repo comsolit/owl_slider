@@ -1,15 +1,16 @@
 {namespace owl=Comsolit\OwlSlider\ViewHelpers}
 
-<div id="{f:if(condition:'{settings.slider_id}',then:'owlslider_{settings.slider_id}',else:'owlslider')}" class="owl-carousel owl-theme">
+<div id="{f:if(condition:'{settings.slider_id}',then:'owlslider_{settings.slider_id}',else:'owlslider')}"
+     class="owl-carousel owl-theme" xmlns:f="http://www.w3.org/1999/html">
   <f:for each="{items}" as="item">
     <div class="item">
       <f:if condition="{item.itemimage}">
         <f:if condition="{item.itemlink}">
           <f:then>
             <f:format.raw>
-              <owl:typolink parameter="{item.itemlink}">
+              <f:link.typolink parameter="{item.itemlink}">
                 <f:image class="lazyOwl" src="uploads/tx_owlslider/{item.itemimage}" height="{settings.slideHeight}" alt="{item.itemname}"/>
-              </owl:typolink>
+              </f:link.typolink>
             </f:format.raw>
           </f:then>
           <f:else>

@@ -19,22 +19,35 @@ class AddJsFooterInlineCodeViewHelper extends \TYPO3\CMS\Fluid\Core\ViewHelper\A
         $this->pageRenderer = $pageRenderer;
     }
 
-    /**
-     *
-     * @param string $name
-     * @param string $compress
-     * @param string $forceOnTop
-     * @param string $excludeFromConcatenation
-     * @return NULL
-     */
-    public function render($name, $compress = FALSE, $forceOnTop = FALSE, $excludeFromConcatenation = TRUE)
+    public function initializeArguments()
+    {
+        parent::initializeArguments();
+        $this->registerArgument("name", "string", "", false);
+        $this->registerArgument("compress", "boolean", "");
+        $this->registerArgument("forceOnTop", "boolean", "");
+        $this->registerArgument("excludeFromConcatenation", "boolean", "");
+    }
+
+    public function render()
     {
         $block = $this->renderChildren();
         $pageRenderer = $this->getPageRenderer();
 
-        $pageRenderer->addJsFooterFile(\TYPO3\CMS\Core\Utility\ExtensionManagementUtility::siteRelPath(owl_slider) . 'Resources/Public/owl-carousel/owl.carousel.min.js', '', $compress, '', '', $excludeFromConcatenation);
+        $pageRenderer->addJsFooterFile(
+            \TYPO3\CMS\Core\Utility\ExtensionManagementUtility::siteRelPath('owl_slider') . 'Resources/Public/owl-carousel/owl.carousel.min.js',
+            '',
+            $this->arguments['compress'],
+            '',
+            '',
+            $this->arguments['excludeFromConcatenation']
+        );
 
-        $this->pageRenderer->addJsFooterInlineCode($name, $block, $compress, $forceOnTop);
+        $this->pageRenderer->addJsFooterInlineCode(
+            $this->arguments['name'],
+            $block,
+            $this->arguments['compress'],
+            $this->arguments['forceOnTop']
+        );
         return NULL;
     }
 
