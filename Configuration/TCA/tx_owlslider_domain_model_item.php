@@ -29,11 +29,6 @@ return array(
     'types' => array(
         '1' => array(
             'showitem' => 'sys_language_uid, l10n_parent, l10n_diffsource, hidden, itemname, itemimage, itemlink, itemcontent, column_offset,--div--;LLL:EXT:frontend/Resources/Private/Language/locallang_ttc.xlf:tabs.access,starttime, endtime',
-            'columnsOverrides' => array(
-                'itemcontent' => array(
-                    'defaultExtras' => 'richtext:rte_transform[mode=ts_css]'
-                )
-            )
         )
     ),
     'palettes' => array(
@@ -52,9 +47,9 @@ return array(
                 'special' => 'languages',
                 'items' => [
                     [
-                      'LLL:EXT:lang/Resources/Private/Language/locallang_general.xlf:LGL.allLanguages',
-                       -1,
-                      'flags-multiple'
+                        'LLL:EXT:lang/Resources/Private/Language/locallang_general.xlf:LGL.allLanguages',
+                        -1,
+                        'flags-multiple'
                     ],
                 ],
             )
@@ -71,7 +66,6 @@ return array(
                 ],
                 'foreign_table' => 'tx_owlslider_domain_model_item',
                 'foreign_table_where' => 'AND tx_owlslider_domain_model_item.pid=###CURRENT_PID### AND tx_owlslider_domain_model_item.sys_language_uid IN (-1,0)',
-                'showIconTable' => false,
                 'default' => 0,
             ]
         ),
@@ -145,9 +139,7 @@ return array(
             'label' => 'LLL:EXT:owl_slider/Resources/Private/Language/locallang_db.xlf:tx_owlslider_domain_model_item.itemimage',
             'config' => array(
                 'type' => 'group',
-                'internal_type' => 'file',
                 'uploadfolder' => 'uploads/tx_owlslider',
-                'show_thumbs' => 1,
                 'minitems' => 1,
                 'size' => 1,
                 'maxitems' => 1,
@@ -163,6 +155,7 @@ return array(
                 'size' => '15',
                 'max' => '255',
                 'eval' => 'trim',
+                'renderType' => 'inputLink',
                 'wizards' => array(
                     '_PADDING' => 2,
                     'link' => array(
@@ -170,7 +163,7 @@ return array(
                         'title' => 'Link',
                         'icon' => 'actions-wizard-link',
                         'module' => array(
-                            'name' => 'wizard_element_browser',
+                            'name' => 'wizard_link',
                             'urlParameters' => array(
                                 'mode' => 'wizard'
                             )
@@ -188,14 +181,15 @@ return array(
                 'type' => 'text',
                 'cols' => '30',
                 'rows' => '5',
+                'defaultExtras' => 'richtext:rte_transform[mode=ts_css]',
                 'wizards' => array(
                     'RTE' => array(
                         'icon' => 'actions-wizard-rte',
                         'notNewRecords' => 1,
                         'RTEonly' => 1,
-                       	'module' => array(
+                        'module' => array(
                             'name' => 'wizard_rte'
-                       	),
+                        ),
                         'wizard_rte',
                         'title' => 'LLL:EXT:cms/locallang_ttc.xlf:bodytext.W.RTE',
                         'type' => 'script'
