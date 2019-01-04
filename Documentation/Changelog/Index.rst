@@ -83,3 +83,9 @@ ChangeLog
 | 2.5.4          | Fix missing default language                                                    |
 |                | Fix error for translation selection                                             |
 +----------------+---------------------------------------------------------------------------------+
+| 3.0.0          | Replace TCA language translation path for TYPO3 9.5                             |
+|                | Remove TYPO3 7.6 compatibility                                                  |
+|                | Initialize arguments for render function in FooterViewhelper                    |
+|                | Delete TypolinkViewhelper and replace with fluid standards                      |
+|                | Fix TCA migration configuration                                                 |
++----------------+---------------------------------------------------------------------------------+
