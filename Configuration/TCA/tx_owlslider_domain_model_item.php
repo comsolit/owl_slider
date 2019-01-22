@@ -139,6 +139,7 @@ return array(
             'label' => 'LLL:EXT:owl_slider/Resources/Private/Language/locallang_db.xlf:tx_owlslider_domain_model_item.itemimage',
             'config' => array(
                 'type' => 'group',
+                'internal_type' => 'file',
                 'uploadfolder' => 'uploads/tx_owlslider',
                 'minitems' => 1,
                 'size' => 1,

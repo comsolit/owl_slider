@@ -64,7 +64,7 @@ class ItemController extends \TYPO3\CMS\Extbase\Mvc\Controller\ActionController
      * get the custom config name
      *
      * @param $settings
-     * @return returns custom config name
+     * @return mixed
      */
     public function getCustomConfigName($settings)
     {
@@ -77,8 +77,9 @@ class ItemController extends \TYPO3\CMS\Extbase\Mvc\Controller\ActionController
     /**
      * get the custom config array
      *
-     * @param $customConfigName, $settings
-     * @return returns custom config array
+     * @param $customConfigName
+     * @param $settings
+     * @return array|mixed
      */
     public function getCustomConfigArray($customConfigName, $settings)
     {
@@ -93,8 +94,9 @@ class ItemController extends \TYPO3\CMS\Extbase\Mvc\Controller\ActionController
     /**
      * apply custom config values
      *
-     * @param $settings, $customConfigArray
-     * @return returns settings with custom values applied
+     * @param $settings
+     * @param $customConfigArray
+     * @return array
      */
     public function applyCustomConfig($settings, $customConfigArray)
     {

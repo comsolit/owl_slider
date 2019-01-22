@@ -31,11 +31,9 @@ class AddJsFooterInlineCodeViewHelper extends \TYPO3\CMS\Fluid\Core\ViewHelper\A
     public function render()
     {
         $block = $this->renderChildren();
-        $pageRenderer = $this->getPageRenderer();
 
-        $pageRenderer->addJsFooterFile(
-            \TYPO3\CMS\Core\Utility\ExtensionManagementUtility::siteRelPath('owl_slider') . 'Resources/Public/owl-carousel/owl.carousel.min.js',
-            '',
+        $this->pageRenderer->addJsFooterFile(
+            'EXT:owl_slider/Resources/Public/owl-carousel/owl.carousel.min.js',
             $this->arguments['compress'],
             '',
             '',
@@ -49,13 +47,5 @@ class AddJsFooterInlineCodeViewHelper extends \TYPO3\CMS\Fluid\Core\ViewHelper\A
             $this->arguments['forceOnTop']
         );
         return NULL;
-    }
-
-    /**
-     * @return PageRenderer
-     */
-    private function getPageRenderer()
-    {
-        return \TYPO3\CMS\Core\Utility\GeneralUtility::makeInstance('TYPO3\CMS\Core\Page\PageRenderer');
     }
 }
