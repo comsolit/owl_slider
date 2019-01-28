@@ -89,3 +89,5 @@ ChangeLog
 |                | Delete TypolinkViewhelper and replace with fluid standards                      |
 |                | Fix TCA migration configuration                                                 |
 +----------------+---------------------------------------------------------------------------------+
+| 3.0.1          | Fix fluid curly brackets for TYPO3 9.5.4                                        |
++----------------+---------------------------------------------------------------------------------+
