@@ -14,5 +14,3 @@ if (! defined('TYPO3_MODE')) {
 );
 
 include_once(\TYPO3\CMS\Core\Utility\ExtensionManagementUtility::extPath($_EXTKEY) . 'Classes/PHP/tx_owlslider_addFieldsToFlexForm.php');
-
-?>

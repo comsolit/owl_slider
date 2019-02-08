@@ -17,4 +17,3 @@ $GLOBALS['TCA']['tt_content']['types']['list']['subtypes_addlist'][$pluginSignat
     $pluginSignature,
     'FILE:EXT:' . $extKey . '/Configuration/FlexForms/flexform_owlslider.xml'
 );
-?>

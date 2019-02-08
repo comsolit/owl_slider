@@ -84,10 +84,9 @@ ChangeLog
 |                | Fix error for translation selection                                             |
 +----------------+---------------------------------------------------------------------------------+
 | 3.0.0          | Replace TCA language translation path for TYPO3 9.5                             |
-|                | Remove TYPO3 7.6 compatibility                                                  |
+|                | Remove TYPO3 7.6 + 8.7 compatibility                                            |
 |                | Initialize arguments for render function in FooterViewhelper                    |
 |                | Delete TypolinkViewhelper and replace with fluid standards                      |
 |                | Fix TCA migration configuration                                                 |
-+----------------+---------------------------------------------------------------------------------+
-| 3.0.1          | Fix fluid curly brackets for TYPO3 9.5.4                                        |
+|                | Fix fluid curly brackets for TYPO3 9.5.4                                        |
 +----------------+---------------------------------------------------------------------------------+

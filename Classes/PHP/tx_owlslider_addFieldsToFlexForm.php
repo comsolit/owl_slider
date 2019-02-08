@@ -8,25 +8,25 @@ class tx_owlslider_addFieldsToFlexForm
      * @param $config
      * @return mixed
      */
-    function addFields ($config) {
+    function addFields($config)
+    {
         global $LANG;
 
-        $pid = intval($config['row']['pid']);
+        $pid = intval($config['flexParentDatabaseRow']['pid']);
 
         $ts = $this->loadTS($pid);
         $predefTsArray = $ts['plugin.']['tx_owlslider.']['settings.']['predef.'];
         $optionList = array();
 
-
-        if(is_array($predefTsArray)) {
+        if (is_array($predefTsArray)) {
             $optionList[] = array(0 => $LANG->sL('LLL:EXT:owl_slider/Resources/Private/Language/locallang_db.xlf:tx_owlslider_domain_model_item.please_select'), 1 => '');
-            foreach($predefTsArray as $key => $value) {
+            foreach ($predefTsArray as $key => $value) {
                 $optionList[] = array(0 => $value['name'], 1 => $value['name']);
             }
         } else {
             $optionList[] = array(0 => $LANG->sL('LLL:EXT:owl_slider/Resources/Private/Language/locallang_db.xlf:tx_owlslider_domain_model_item.no_settings'), 1 => '');
         }
-        $config['items'] = array_merge($config['items'],$optionList);
+        $config['items'] = array_merge($config['items'], $optionList);
         return $config;
     }
 
@@ -36,7 +36,8 @@ class tx_owlslider_addFieldsToFlexForm
      * @param int $pageUid
      * @return array The TypoScript setup
      */
-    function loadTS($pageUid) {
+    function loadTS($pageUid)
+    {
         $sysPageObj = \TYPO3\CMS\Core\Utility\GeneralUtility::makeInstance('TYPO3\CMS\Frontend\Page\PageRepository');
         $rootLine = $sysPageObj->getRootLine($pageUid);
         $TSObj = \TYPO3\CMS\Core\Utility\GeneralUtility::makeInstance('TYPO3\CMS\Core\TypoScript\ExtendedTemplateService');

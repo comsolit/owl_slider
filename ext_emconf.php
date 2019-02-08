@@ -17,7 +17,7 @@ $EM_CONF[$_EXTKEY] = array(
     'modify_tables' => '',
     'clearCacheOnLoad' => 0,
     'lockType' => '',
-    'version' => '3.0.1',
+    'version' => '3.0.0',
     'constraints' => array(
         'depends' => array(
             'extbase' => '9.0.00-9.5.99',
@@ -28,5 +28,3 @@ $EM_CONF[$_EXTKEY] = array(
         'suggests' => array()
     )
 );
-
-?>

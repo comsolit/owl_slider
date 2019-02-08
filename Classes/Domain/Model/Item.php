@@ -148,4 +148,3 @@ class Item extends \TYPO3\CMS\Extbase\DomainObject\AbstractEntity
         $this->itemcontent = $itemcontent;
     }
 }
-?>

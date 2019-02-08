@@ -115,4 +115,3 @@ class ItemController extends \TYPO3\CMS\Extbase\Mvc\Controller\ActionController
         $this->view->assign('item', $item);
     }
 }
-?>

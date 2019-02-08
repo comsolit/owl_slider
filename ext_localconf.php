@@ -14,5 +14,3 @@ if (!defined('TYPO3_MODE')) {
         'Item' => ''
     )
 );
-
-?>
