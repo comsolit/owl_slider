@@ -26,6 +26,8 @@ namespace Comsolit\OwlSlider\Controller;
  * This copyright notice MUST APPEAR in all copies of the script!
  ***************************************************************/
 
+use TYPO3\CMS\Extbase\Annotation\Inject;
+
 /**
  *
  * @package owl_slider
@@ -37,8 +39,8 @@ class ItemController extends \TYPO3\CMS\Extbase\Mvc\Controller\ActionController
     /**
      * itemRepository
      *
+     * @Inject
      * @var \Comsolit\OwlSlider\Domain\Repository\ItemRepository
-     * @inject
      */
     protected $itemRepository;
 

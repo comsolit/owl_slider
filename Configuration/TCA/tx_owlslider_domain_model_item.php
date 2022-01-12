@@ -12,7 +12,6 @@ return array(
         'versioningWS' => TRUE,
         'origUid' => 't3_origuid',
         'languageField' => 'sys_language_uid',
-        'transOrigPointerField' => 'l10n_parent',
         'transOrigDiffSourceField' => 'l10n_diffsource',
         'delete' => 'deleted',
         'enablecolumns' => array(
@@ -22,9 +21,6 @@ return array(
         ),
         'searchFields' => 'itemname,itemimage,itemlink,',
         'iconfile' => 'EXT:owl_slider/Resources/Public/Icons/tx_owlslider_domain_model_item.png'
-    ),
-    'interface' => array(
-        'showRecordFieldList' => 'sys_language_uid, l10n_parent, l10n_diffsource, hidden, itemname, itemimage, itemlink, itemcontent'
     ),
     'types' => array(
         '1' => array(
@@ -134,20 +130,49 @@ return array(
                 'eval' => 'trim,required'
             )
         ),
-        'itemimage' => array(
-            'exclude' => 0,
+//        'itemimage' => array(
+//            'exclude' => 0,
+//            'label' => 'LLL:EXT:owl_slider/Resources/Private/Language/locallang_db.xlf:tx_owlslider_domain_model_item.itemimage',
+//            'config' => array(
+//                'type' => 'inline',
+//                'internal_type' => 'file',
+//                'uploadfolder' => 'uploads/tx_owlslider',
+//                'minitems' => 1,
+//                'size' => 1,
+//                'maxitems' => 1,
+//                'allowed' => $GLOBALS['TYPO3_CONF_VARS']['GFX']['imagefile_ext'],
+//                'disallowed' => ''
+//            )
+//        ),
+        'itemimage' => [
             'label' => 'LLL:EXT:owl_slider/Resources/Private/Language/locallang_db.xlf:tx_owlslider_domain_model_item.itemimage',
-            'config' => array(
-                'type' => 'group',
-                'internal_type' => 'file',
-                'uploadfolder' => 'uploads/tx_owlslider',
-                'minitems' => 1,
-                'size' => 1,
-                'maxitems' => 1,
-                'allowed' => $GLOBALS['TYPO3_CONF_VARS']['GFX']['imagefile_ext'],
-                'disallowed' => ''
-            )
-        ),
+            'config' => \TYPO3\CMS\Core\Utility\ExtensionManagementUtility::getFileFieldTCAConfig(
+                'itemimage',
+                [
+                    'appearance' => [
+                        'createNewRelationLinkTitle' => 'LLL:EXT:cms/locallang_ttc.xlf:images.addFileReference',
+
+                    ],
+                    // custom configuration for displaying fields in the overlay/reference table
+                    // to use the image overlay palette instead of the basic overlay palette
+                    'overrideChildTca' => [
+                        'types' => [
+                            '0' => [
+                                'showitem' => '
+                            --palette--;LLL:EXT:lang/locallang_tca.xlf:sys_file_reference.imageoverlayPalette;imageoverlayPalette,
+                            --palette--;;filePalette'
+                            ],
+                            \TYPO3\CMS\Core\Resource\File::FILETYPE_TEXT => [
+                                'showitem' => '
+                            --palette--;LLL:EXT:lang/locallang_tca.xlf:sys_file_reference.imageoverlayPalette;imageoverlayPalette,
+                            --palette--;;filePalette'
+                            ],
+                        ],
+                    ],
+                ],
+                $GLOBALS['TYPO3_CONF_VARS']['GFX']['imagefile_ext']
+            ),
+        ],
         'itemlink' => array(
             'exclude' => 0,
             'label' => 'LLL:EXT:owl_slider/Resources/Private/Language/locallang_db.xlf:tx_owlslider_domain_model_item.itemlink',

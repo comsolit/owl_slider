@@ -14,7 +14,7 @@
             <TCEforms>
               <label></label>
               <config>
-                <type>select</type>
+                <type>selectSingle</type>
                 <items type="array">
                   <numIndex index="0" type="array">
                     <numIndex index="0">Simple Owl</numIndex>
@@ -40,7 +40,7 @@
             <TCEforms>
               <label>Custom settings</label>
               <config>
-                <type>select</type>
+                <type>selectSingle</type>
                 <itemsProcFunc>tx_owlslider_addFieldsToFlexForm->addFields</itemsProcFunc>
               </config>
             </TCEforms>

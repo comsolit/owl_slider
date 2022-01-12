@@ -4,7 +4,7 @@ if (!defined('TYPO3_MODE')) {
 }
 
 \TYPO3\CMS\Extbase\Utility\ExtensionUtility::configurePlugin(
-    'Comsolit.' . $_EXTKEY,
+    'Comsolit.owl_slider',
     'Owlslider',
     array(
         'Item' => 'list, show'
@@ -14,3 +14,6 @@ if (!defined('TYPO3_MODE')) {
         'Item' => ''
     )
 );
+
+$GLOBALS['TYPO3_CONF_VARS']['SC_OPTIONS']['ext/install']['update']['owlSliderItemImage']
+    = \Comsolit\OwlSlider\Updates\ItemImageUpdateWizard::class;

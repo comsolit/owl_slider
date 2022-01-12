@@ -1,5 +1,8 @@
 <?php
 
+use TYPO3\CMS\Core\Utility\GeneralUtility;
+use TYPO3\CMS\Core\Utility\RootlineUtility;
+
 class tx_owlslider_addFieldsToFlexForm
 {
     /**
@@ -38,11 +41,13 @@ class tx_owlslider_addFieldsToFlexForm
      */
     function loadTS($pageUid)
     {
-        $sysPageObj = \TYPO3\CMS\Core\Utility\GeneralUtility::makeInstance('TYPO3\CMS\Frontend\Page\PageRepository');
-        $rootLine = $sysPageObj->getRootLine($pageUid);
-        $TSObj = \TYPO3\CMS\Core\Utility\GeneralUtility::makeInstance('TYPO3\CMS\Core\TypoScript\ExtendedTemplateService');
+        $sysPageObj = \TYPO3\CMS\Core\Utility\GeneralUtility::makeInstance(TYPO3\CMS\Core\Domain\Repository\PageRepository::class);
+        $rootlineUtility = GeneralUtility::makeInstance(RootlineUtility::class, $pageUid);
+        $rootLine = $rootlineUtility->get();
+
+        $TSObj = \TYPO3\CMS\Core\Utility\GeneralUtility::makeInstance(\TYPO3\CMS\Core\TypoScript\ExtendedTemplateService::class);
         $TSObj->tt_track = 0;
-        $TSObj->init();
+//        $TSObj->init();
         $TSObj->runThroughTemplates($rootLine);
         $TSObj->generateConfig();
         return $TSObj->setup;

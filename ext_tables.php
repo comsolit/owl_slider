@@ -13,4 +13,4 @@ if (! defined('TYPO3_MODE')) {
     'tx_owlslider_domain_model_item'
 );
 
-include_once(\TYPO3\CMS\Core\Utility\ExtensionManagementUtility::extPath($_EXTKEY) . 'Classes/PHP/tx_owlslider_addFieldsToFlexForm.php');
+include_once(\TYPO3\CMS\Core\Utility\ExtensionManagementUtility::extPath('owl_slider') . 'Classes/PHP/tx_owlslider_addFieldsToFlexForm.php');
