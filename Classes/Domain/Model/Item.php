@@ -26,6 +26,8 @@ namespace Comsolit\OwlSlider\Domain\Model;
  * This copyright notice MUST APPEAR in all copies of the script!
  ***************************************************************/
 
+use TYPO3\CMS\Extbase\Annotation as Extbase;
+
 /**
  *
  * @package owl_slider
@@ -37,37 +39,36 @@ class Item extends \TYPO3\CMS\Extbase\DomainObject\AbstractEntity
     /**
      * Item name
      *
-     * @var \string
-     * @validate NotEmpty
+     * @var string
+     * @Extbase\Validate("NotEmpty")
      */
     protected $itemname;
 
     /**
      * Item image
      *
-     * @var \string
-     * @validate NotEmpty
+     * @var \TYPO3\CMS\Extbase\Domain\Model\FileReference
      */
     protected $itemimage;
 
     /**
      * Item link
      *
-     * @var \string
+     * @var string
      */
     protected $itemlink;
 
     /**
      * Item content
      *
-     * @var \string
+     * @var string
      */
     protected $itemcontent;
 
     /**
      * Returns the itemname
      *
-     * @return \string $itemname
+     * @return string $itemname
      */
     public function getItemname()
     {
@@ -77,7 +78,7 @@ class Item extends \TYPO3\CMS\Extbase\DomainObject\AbstractEntity
     /**
      * Sets the itemname
      *
-     * @param \string $itemname
+     * @param string $itemname
      * @return void
      */
     public function setItemname($itemname)
@@ -88,7 +89,7 @@ class Item extends \TYPO3\CMS\Extbase\DomainObject\AbstractEntity
     /**
      * Returns the itemimage
      *
-     * @return \string $itemimage
+     * @return string $itemimage
      */
     public function getItemimage()
     {
@@ -98,7 +99,7 @@ class Item extends \TYPO3\CMS\Extbase\DomainObject\AbstractEntity
     /**
      * Sets the itemimage
      *
-     * @param \string $itemimage
+     * @param string $itemimage
      * @return void
      */
     public function setItemimage($itemimage)
@@ -109,7 +110,7 @@ class Item extends \TYPO3\CMS\Extbase\DomainObject\AbstractEntity
     /**
      * Returns the itemlink
      *
-     * @return \string itemlink
+     * @return string itemlink
      */
     public function getItemlink()
     {
@@ -119,7 +120,7 @@ class Item extends \TYPO3\CMS\Extbase\DomainObject\AbstractEntity
     /**
      * Sets the itemlink
      *
-     * @param \string $itemlink
+     * @param string $itemlink
      * @return void
      */
     public function setItemlink($itemlink)
@@ -130,7 +131,7 @@ class Item extends \TYPO3\CMS\Extbase\DomainObject\AbstractEntity
     /**
      * Returns the itemcontent
      *
-     * @return \string $itemcontent
+     * @return string $itemcontent
      */
     public function getItemcontent()
     {
@@ -140,7 +141,7 @@ class Item extends \TYPO3\CMS\Extbase\DomainObject\AbstractEntity
     /**
      * Sets the itemcontent
      *
-     * @param \string $itemcontent
+     * @param string $itemcontent
      * @return void
      */
     public function setItemcontent($itemcontent)

@@ -8,12 +8,12 @@
           <f:then>
             <f:format.raw>
               <f:link.typolink parameter="{item.itemlink}">
-                <f:image class="lazyOwl" src="uploads/tx_owlslider/{item.itemimage}" height="{settings.slideHeight}" alt="{item.itemname}"/>
+                <f:image class="lazyOwl" image="{item.itemimage}" height="{settings.slideHeight}" alt="{item.itemname}" />
               </f:link.typolink>
             </f:format.raw>
           </f:then>
           <f:else>
-            <f:image class="lazyOwl" src="uploads/tx_owlslider/{item.itemimage}" height="{settings.slideHeight}" alt="{item.itemname}"/>
+            <f:image class="lazyOwl" image="{item.itemimage}" height="{settings.slideHeight}" alt="{item.itemname}" />
           </f:else>
         </f:if>
       </f:if>

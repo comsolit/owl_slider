@@ -2,7 +2,7 @@
 
 namespace Comsolit\OwlSlider\ViewHelpers;
 
-class AddJsFooterInlineCodeViewHelper extends \TYPO3\CMS\Fluid\Core\ViewHelper\AbstractViewHelper
+class AddJsFooterInlineCodeViewHelper extends \TYPO3Fluid\Fluid\Core\ViewHelper\AbstractViewHelper
 {
     /**
      *
